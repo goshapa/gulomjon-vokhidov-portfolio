@@ -30,7 +30,9 @@ window.SITE_I18N = {
       paragraph2: "Har bir loyihada mijozning ma'lumotlari va infratuzilmasini ishonchli himoya qilishga, shu bilan birga sifatli va barqaror kod yozishga e'tibor qarataman. Doimiy ravishda yangi texnologiyalarni o'rganaman va amaliyotda qo'llayman.",
       statsProjectsLabel: "Bajarilgan loyihalar",
       statsExperienceLabel: "Yillik tajriba",
-      statsClientsLabel: "Mamnun mijozlar"
+      statsClientsLabel: "Mamnun mijozlar",
+      statsUniversitiesLabel: "Universitet qabul qildi",
+      statsGrantLabel: "Grant olindi"
     },
     projects: {
       subtitle: "Portfolio",
@@ -118,7 +120,9 @@ window.SITE_I18N = {
       paragraph2: "В каждом проекте уделяю особое внимание надёжной защите данных и инфраструктуры клиента, а также чистому и стабильному коду. Постоянно изучаю новые технологии и применяю их на практике.",
       statsProjectsLabel: "Завершённых проектов",
       statsExperienceLabel: "Лет опыта",
-      statsClientsLabel: "Довольных клиентов"
+      statsClientsLabel: "Довольных клиентов",
+      statsUniversitiesLabel: "Университетов приняли",
+      statsGrantLabel: "Грант получен"
     },
     projects: {
       subtitle: "Портфолио",
@@ -206,7 +210,9 @@ window.SITE_I18N = {
       paragraph2: "In every project I focus on reliably protecting client data and infrastructure, as well as writing clean, stable code. I constantly study new technologies and apply them in practice.",
       statsProjectsLabel: "Completed Projects",
       statsExperienceLabel: "Years of Experience",
-      statsClientsLabel: "Happy Clients"
+      statsClientsLabel: "Happy Clients",
+      statsUniversitiesLabel: "Universities Accepted Me",
+      statsGrantLabel: "Grant Secured"
     },
     projects: {
       subtitle: "Portfolio",

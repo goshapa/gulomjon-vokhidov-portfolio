@@ -335,10 +335,17 @@
     items.forEach(function (el) { observer.observe(el); });
   }
 
+  function formatStatValue(el, value) {
+    var prefix = el.getAttribute("data-prefix") || "";
+    var suffix = el.hasAttribute("data-suffix") ? el.getAttribute("data-suffix") : "+";
+    var grouped = value.toLocaleString("en-US");
+    return prefix + grouped + suffix;
+  }
+
   function initStatCounters() {
     var stats = document.querySelectorAll(".stat-num");
     if (!("IntersectionObserver" in window)) {
-      stats.forEach(function (el) { el.textContent = el.getAttribute("data-count") + "+"; });
+      stats.forEach(function (el) { el.textContent = formatStatValue(el, parseInt(el.getAttribute("data-count"), 10)); });
       return;
     }
     var observer = new IntersectionObserver(function (entries) {
@@ -346,15 +353,14 @@
         if (!entry.isIntersecting) return;
         var el = entry.target;
         var target = parseInt(el.getAttribute("data-count"), 10);
-        var start = 0;
         var duration = 1200;
         var startTime = null;
         function step(ts) {
           if (!startTime) startTime = ts;
           var progress = Math.min((ts - startTime) / duration, 1);
-          el.textContent = Math.floor(progress * target) + "+";
+          el.textContent = formatStatValue(el, Math.floor(progress * target));
           if (progress < 1) requestAnimationFrame(step);
-          else el.textContent = target + "+";
+          else el.textContent = formatStatValue(el, target);
         }
         requestAnimationFrame(step);
         observer.unobserve(el);
