@@ -12,6 +12,47 @@
 
   var PARTNER_PLACEHOLDERS = ["TechCorp", "SecureNet", "CyberShield", "DataGuard", "NetVantage", "ShieldWorks"];
 
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = src;
+      s.onload = resolve;
+      s.onerror = reject;
+      document.body.appendChild(s);
+    });
+  }
+
+  function initStudio3DLazy() {
+    var target = document.getElementById("studio3d");
+    if (!target || !("IntersectionObserver" in window)) return;
+    var started = false;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          loadScript("https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js")
+            .then(function () { return loadScript("js/three-scene.js"); })
+            .then(function () { if (window.initStudio3D) window.initStudio3D(); });
+          observer.disconnect();
+        }
+      });
+    }, { rootMargin: "400px" });
+    observer.observe(target);
+  }
+
+  function initBackToTop() {
+    var btn = document.getElementById("back-to-top");
+    if (!btn) return;
+    function update() {
+      btn.classList.toggle("is-visible", window.scrollY > window.innerHeight * 0.6);
+    }
+    window.addEventListener("scroll", update, { passive: true });
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    update();
+  }
+
   function getByPath(obj, path) {
     return path.split(".").reduce(function (acc, key) {
       return acc && acc[key] !== undefined ? acc[key] : undefined;
@@ -128,7 +169,8 @@
     var buttonLabel = item.isLive ? i18n.projects.visitSite : i18n.projects.viewRepo;
     var mediaHtml = item.isLive
       ? '<iframe class="browser-frame" src="' + item.url + '" loading="lazy" title="' + item.title + '"></iframe>' +
-        '<img class="browser-fallback-img" src="./gulomjon_photo.png" alt="' + item.title + '" loading="lazy">'
+        '<img class="browser-fallback-img" src="./gulomjon_photo.png" alt="' + item.title + '" loading="lazy">' +
+        '<div class="browser-loader"><span class="loader-spin"></span></div>'
       : '<img class="browser-fallback-img is-always-visible" src="' + item.image + '" alt="' + item.title + '" loading="lazy">';
     return (
       '<div class="project-card' + (index >= 2 ? " is-extra" : "") + '" data-index="' + index + '">' +
@@ -137,7 +179,7 @@
             '<span class="browser-dots"><span></span><span></span><span></span></span>' +
             '<span class="browser-url">' + displayUrl + "</span>" +
           "</div>" +
-          mediaHtml +
+          '<div class="browser-media">' + mediaHtml + "</div>" +
         "</div>" +
         '<div class="project-body">' +
           '<span class="project-tag">' + item.category + "</span>" +
@@ -154,6 +196,13 @@
     grid.innerHTML = dict.projects.items.map(function (item, i) {
       return browserMockCard(item, i, dict);
     }).join("");
+
+    grid.querySelectorAll(".browser-frame").forEach(function (frame) {
+      frame.addEventListener("load", function () {
+        var loader = frame.parentElement.querySelector(".browser-loader");
+        if (loader) loader.classList.add("is-hidden");
+      });
+    });
 
     var toggleBtn = document.getElementById("projects-toggle");
     var expanded = toggleBtn.getAttribute("data-expanded") === "true";
@@ -330,5 +379,7 @@
     applyTranslations(currentLang());
     initRevealAnimations();
     initStatCounters();
+    initStudio3DLazy();
+    initBackToTop();
   });
 })();
