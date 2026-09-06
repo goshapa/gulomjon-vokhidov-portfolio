@@ -51,8 +51,9 @@ window.SITE_I18N = {
     studio3d: {
       subtitle: "Vizualizatsiya",
       title: "3D-studiya",
-      description: "Tarmoq va xavfsizlik tuzilmalarini 3D formatda vizualizatsiya qilish.",
-      hint: "Aylantirish uchun torting"
+      description: "3D obyektlarni ko'ring — pastdagi tugmalar orqali modellarni almashtiring.",
+      hint: "Aylantirish uchun torting",
+      models: { network: "Tarmoq", pistol: "Pistolet", rubik: "Rubik kubi", car: "Gelik" }
     },
     aivideo: {
       subtitle: "Kreativ loyihalar",
@@ -141,8 +142,9 @@ window.SITE_I18N = {
     studio3d: {
       subtitle: "Визуализация",
       title: "3D-студия",
-      description: "Визуализация сетевых и защитных структур в 3D.",
-      hint: "Потяните, чтобы вращать"
+      description: "3D-объекты — переключайтесь между моделями с помощью кнопок ниже.",
+      hint: "Потяните, чтобы вращать",
+      models: { network: "Сеть", pistol: "Пистолет", rubik: "Кубик Рубика", car: "Гелик" }
     },
     aivideo: {
       subtitle: "Креативные проекты",
@@ -231,8 +233,9 @@ window.SITE_I18N = {
     studio3d: {
       subtitle: "Visualization",
       title: "3D Studio",
-      description: "Visualizing network and security structures in 3D.",
-      hint: "Drag to rotate"
+      description: "A few 3D objects — switch between models with the buttons below.",
+      hint: "Drag to rotate",
+      models: { network: "Network", pistol: "Pistol", rubik: "Rubik's Cube", car: "G-Wagon" }
     },
     aivideo: {
       subtitle: "Creative Projects",

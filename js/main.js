@@ -40,6 +40,21 @@
     observer.observe(target);
   }
 
+  function initStudio3DSwitch() {
+    var switcher = document.getElementById("studio3d-switch");
+    if (!switcher) return;
+    switcher.addEventListener("click", function (e) {
+      var btn = e.target.closest(".studio3d-switch-btn");
+      if (!btn) return;
+      var name = btn.getAttribute("data-model");
+      switcher.querySelectorAll(".studio3d-switch-btn").forEach(function (b) {
+        b.classList.toggle("is-active", b === btn);
+      });
+      window.pendingStudio3DModel = name;
+      if (window.setStudio3DModel) window.setStudio3DModel(name);
+    });
+  }
+
   function initBackToTop() {
     var btn = document.getElementById("back-to-top");
     if (!btn) return;
@@ -386,6 +401,7 @@
     initRevealAnimations();
     initStatCounters();
     initStudio3DLazy();
+    initStudio3DSwitch();
     initBackToTop();
   });
 })();
