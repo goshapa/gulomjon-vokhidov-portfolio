@@ -24,6 +24,7 @@
       <a href="#home" data-i18n="nav.home">Home</a>
       <a href="#about" data-i18n="nav.about">About</a>
       <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
       <a href="#studio3d" data-i18n="nav.studio3d">3D Studio</a>
       <a href="#aivideo" data-i18n="nav.aivideo">AI Video</a>
       <a href="#partners" data-i18n="nav.partners">Partners</a>
@@ -60,6 +61,7 @@
   <a href="#home" data-i18n="nav.home">Home</a>
   <a href="#about" data-i18n="nav.about">About</a>
   <a href="#projects" data-i18n="nav.projects">Projects</a>
+  <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
   <a href="#studio3d" data-i18n="nav.studio3d">3D Studio</a>
   <a href="#aivideo" data-i18n="nav.aivideo">AI Video</a>
   <a href="#partners" data-i18n="nav.partners">Partners</a>
@@ -162,6 +164,31 @@
   </div>
 </section>
 
+<!-- ===== Certificates ===== -->
+<section class="section" id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="certificates.subtitle">Achievements</span>
+      <h2 class="section-title" data-i18n="certificates.title">Certificates</h2>
+      <p style="color:var(--text-muted); margin-top:12px;" data-i18n="certificates.description"></p>
+    </div>
+    <div class="certificates-grid reveal" id="certificates-grid"></div>
+  </div>
+</section>
+
+<div class="cert-lightbox" id="cert-lightbox" aria-hidden="true">
+  <button class="cert-lightbox-close" id="cert-lightbox-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="cert-lightbox-inner">
+    <img id="cert-lightbox-img" src="" alt="">
+    <div class="cert-lightbox-caption">
+      <div class="cert-lightbox-title" id="cert-lightbox-title"></div>
+      <div class="cert-lightbox-issuer" id="cert-lightbox-issuer"></div>
+    </div>
+  </div>
+</div>
+
 <!-- ===== 3D Studio ===== -->
 <section class="section" id="studio3d">
   <div class="section-bg-grid"></div>
@@ -175,7 +202,6 @@
       <button class="studio3d-switch-btn is-active" data-model="network" data-i18n="studio3d.models.network">Network</button>
       <button class="studio3d-switch-btn" data-model="pistol" data-i18n="studio3d.models.pistol">Pistol</button>
       <button class="studio3d-switch-btn" data-model="rubik" data-i18n="studio3d.models.rubik">Rubik's Cube</button>
-      <button class="studio3d-switch-btn" data-model="car" data-i18n="studio3d.models.car">G-Wagon</button>
     </div>
     <div class="studio3d-canvas-wrap reveal" id="studio3d-canvas-wrap">
       <span class="studio3d-hint" data-i18n="studio3d.hint">Drag to rotate</span>

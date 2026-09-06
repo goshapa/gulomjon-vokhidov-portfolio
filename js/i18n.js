@@ -8,6 +8,7 @@ window.SITE_I18N = {
       home: "Bosh sahifa",
       about: "Men haqimda",
       projects: "Loyihalar",
+      certificates: "Sertifikatlar",
       studio3d: "3D-studiya",
       aivideo: "AI-video",
       partners: "Hamkorlar",
@@ -48,12 +49,17 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "O'quv markazi uchun Telegram-bot: testlar, savollar bazasi va natijalar statistikasi.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
       ]
     },
+    certificates: {
+      subtitle: "Yutuqlar",
+      title: "Sertifikatlar",
+      description: "O'qib tugatgan kurslar va olingan sertifikatlar — kattalashtirish uchun bosing."
+    },
     studio3d: {
       subtitle: "Vizualizatsiya",
       title: "3D-studiya",
       description: "3D obyektlarni ko'ring — pastdagi tugmalar orqali modellarni almashtiring.",
       hint: "Aylantirish uchun torting",
-      models: { network: "Tarmoq", pistol: "Pistolet", rubik: "Rubik kubi", car: "Gelik" }
+      models: { network: "Tarmoq", pistol: "Pistolet", rubik: "Rubik kubi" }
     },
     aivideo: {
       subtitle: "Kreativ loyihalar",
@@ -99,6 +105,7 @@ window.SITE_I18N = {
       home: "Главная",
       about: "Обо мне",
       projects: "Проекты",
+      certificates: "Сертификаты",
       studio3d: "3D-студия",
       aivideo: "AI-видео",
       partners: "Партнёры",
@@ -139,12 +146,17 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "Telegram-бот для учебного центра: тесты, база вопросов и статистика результатов.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
       ]
     },
+    certificates: {
+      subtitle: "Достижения",
+      title: "Сертификаты",
+      description: "Пройденные курсы и полученные сертификаты — нажмите, чтобы увеличить."
+    },
     studio3d: {
       subtitle: "Визуализация",
       title: "3D-студия",
       description: "3D-объекты — переключайтесь между моделями с помощью кнопок ниже.",
       hint: "Потяните, чтобы вращать",
-      models: { network: "Сеть", pistol: "Пистолет", rubik: "Кубик Рубика", car: "Гелик" }
+      models: { network: "Сеть", pistol: "Пистолет", rubik: "Кубик Рубика" }
     },
     aivideo: {
       subtitle: "Креативные проекты",
@@ -190,6 +202,7 @@ window.SITE_I18N = {
       home: "Home",
       about: "About",
       projects: "Projects",
+      certificates: "Certificates",
       studio3d: "3D Studio",
       aivideo: "AI Video",
       partners: "Partners",
@@ -230,12 +243,17 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "A Telegram bot for a learning centre: quizzes, a question bank and result statistics.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
       ]
     },
+    certificates: {
+      subtitle: "Achievements",
+      title: "Certificates",
+      description: "Courses completed and certificates earned — click to enlarge."
+    },
     studio3d: {
       subtitle: "Visualization",
       title: "3D Studio",
       description: "A few 3D objects — switch between models with the buttons below.",
       hint: "Drag to rotate",
-      models: { network: "Network", pistol: "Pistol", rubik: "Rubik's Cube", car: "G-Wagon" }
+      models: { network: "Network", pistol: "Pistol", rubik: "Rubik's Cube" }
     },
     aivideo: {
       subtitle: "Creative Projects",
