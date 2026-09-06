@@ -1,8 +1,8 @@
 window.SITE_I18N = {
   uz: {
     seo: {
-      title: "Gulomjon Vokhidov — Kiberxavfsizlik mutaxassisi",
-      description: "Gulomjon Vokhidovning portfolio sayti: kiberxavfsizlik, tarmoq xavfsizligi va penetratsion testlar bo'yicha loyihalar."
+      title: "Gulomjon Vokhidov — Kiberxavfsizlik mutaxassisi va Full-Stack dasturchi",
+      description: "Gulomjon Vokhidovning portfolio sayti: kiberxavfsizlik, full-stack dasturlash (Python, Java, C++, C#, C) va penetratsion testlar bo'yicha loyihalar."
     },
     nav: {
       home: "Bosh sahifa",
@@ -14,20 +14,20 @@ window.SITE_I18N = {
       contact: "Aloqa"
     },
     hero: {
-      badge: "Kiberxavfsizlik mutaxassisi",
+      badge: "Kiberxavfsizlik va Full-Stack dasturlash",
       statusOnline: "Onlayn",
       greeting: "Salom, men",
-      titleLine1: "Raqamli dunyoni",
-      titleAccent: "himoya qilaman",
-      description: "Tarmoq xavfsizligi, penetratsion testlar va infratuzilmani himoyalash bo'yicha ishlayman. Kompaniyalarga zaifliklarni buzg'unchilardan oldin topish va bartaraf etishda yordam beraman.",
+      titleLine1: "Xavfsizlik mutaxassisi,",
+      titleAccent: "full-stack dasturchi",
+      description: "Kiberxavfsizlik va full-stack dasturlash yo'nalishlarida ishlayman — penetratsion testlar va infratuzilmani himoyalashdan tortib, Python, Java, C++, C# va C tillarida to'liq ilovalar yaratishgacha.",
       ctaProjects: "Loyihalarni ko'rish",
       ctaContact: "Bog'lanish"
     },
     about: {
       subtitle: "Tanishuv",
       title: "Men haqimda",
-      paragraph1: "Men Gulomjon Vokhidov — kiberxavfsizlik sohasida ishlovchi mutaxassisman. Tarmoq va veb-ilovalar xavfsizligini tahlil qilish, zaifliklarni aniqlash va ularni bartaraf etish bo'yicha tajribaga egaman.",
-      paragraph2: "Har bir loyihada mijozning ma'lumotlari va infratuzilmasini ishonchli himoya qilishga e'tibor qarataman. Doimiy ravishda yangi texnologiyalarni o'rganaman va amaliyotda qo'llayman.",
+      paragraph1: "Men Gulomjon Vokhidov — kiberxavfsizlik mutaxassisi va full-stack dasturchiman. Tarmoq va veb-ilovalar xavfsizligini tahlil qilish, zaifliklarni aniqlash va bartaraf etishdan tashqari, Python, Java, C++, C# va C tillarida to'liq dasturiy yechimlar yarataman.",
+      paragraph2: "Har bir loyihada mijozning ma'lumotlari va infratuzilmasini ishonchli himoya qilishga, shu bilan birga sifatli va barqaror kod yozishga e'tibor qarataman. Doimiy ravishda yangi texnologiyalarni o'rganaman va amaliyotda qo'llayman.",
       statsProjectsLabel: "Bajarilgan loyihalar",
       statsExperienceLabel: "Yillik tajriba",
       statsClientsLabel: "Mamnun mijozlar"
@@ -89,8 +89,8 @@ window.SITE_I18N = {
 
   ru: {
     seo: {
-      title: "Gulomjon Vokhidov — Специалист по кибербезопасности",
-      description: "Портфолио Gulomjon Vokhidov: проекты в области кибербезопасности, сетевой защиты и пентестинга."
+      title: "Gulomjon Vokhidov — Специалист по кибербезопасности и Full-Stack разработчик",
+      description: "Портфолио Gulomjon Vokhidov: кибербезопасность, full-stack разработка (Python, Java, C++, C#, C) и пентестинг."
     },
     nav: {
       home: "Главная",
@@ -102,20 +102,20 @@ window.SITE_I18N = {
       contact: "Контакты"
     },
     hero: {
-      badge: "Специалист по кибербезопасности",
+      badge: "Кибербезопасность и Full-Stack разработка",
       statusOnline: "Онлайн",
       greeting: "Привет, я",
-      titleLine1: "Защищаю цифровой мир",
-      titleAccent: "от угроз",
-      description: "Занимаюсь сетевой безопасностью, пентестами и защитой инфраструктуры. Помогаю компаниям находить и устранять уязвимости до того, как это сделают злоумышленники.",
+      titleLine1: "Специалист по безопасности,",
+      titleAccent: "full-stack разработчик",
+      description: "Работаю на стыке кибербезопасности и full-stack разработки — от пентестов и защиты инфраструктуры до создания полноценных приложений на Python, Java, C++, C# и C.",
       ctaProjects: "Смотреть проекты",
       ctaContact: "Связаться"
     },
     about: {
       subtitle: "Знакомство",
       title: "Обо мне",
-      paragraph1: "Я Gulomjon Vokhidov — специалист по кибербезопасности. Имею опыт анализа защищённости сетей и веб-приложений, поиска уязвимостей и их устранения.",
-      paragraph2: "В каждом проекте уделяю особое внимание надёжной защите данных и инфраструктуры клиента. Постоянно изучаю новые технологии и применяю их на практике.",
+      paragraph1: "Я Gulomjon Vokhidov — специалист по кибербезопасности и full-stack разработчик. Помимо поиска и устранения уязвимостей в сетях и веб-приложениях, создаю полноценные программные решения на Python, Java, C++, C# и C.",
+      paragraph2: "В каждом проекте уделяю особое внимание надёжной защите данных и инфраструктуры клиента, а также чистому и стабильному коду. Постоянно изучаю новые технологии и применяю их на практике.",
       statsProjectsLabel: "Завершённых проектов",
       statsExperienceLabel: "Лет опыта",
       statsClientsLabel: "Довольных клиентов"
@@ -177,8 +177,8 @@ window.SITE_I18N = {
 
   en: {
     seo: {
-      title: "Gulomjon Vokhidov — Cybersecurity Specialist",
-      description: "Portfolio of Gulomjon Vokhidov: cybersecurity, network security and penetration testing projects."
+      title: "Gulomjon Vokhidov — Cybersecurity Specialist & Full-Stack Developer",
+      description: "Portfolio of Gulomjon Vokhidov: cybersecurity, full-stack development (Python, Java, C++, C#, C) and penetration testing projects."
     },
     nav: {
       home: "Home",
@@ -190,20 +190,20 @@ window.SITE_I18N = {
       contact: "Contact"
     },
     hero: {
-      badge: "Cybersecurity Specialist",
+      badge: "Cybersecurity & Full-Stack Development",
       statusOnline: "Online",
       greeting: "Hi, I'm",
-      titleLine1: "Protecting the digital world",
-      titleAccent: "from threats",
-      description: "I work on network security, penetration testing and infrastructure protection. I help companies find and fix vulnerabilities before attackers do.",
+      titleLine1: "Security specialist,",
+      titleAccent: "full-stack developer",
+      description: "I work at the intersection of cybersecurity and full-stack development — from penetration testing and infrastructure protection to building complete applications in Python, Java, C++, C# and C.",
       ctaProjects: "View Projects",
       ctaContact: "Get in Touch"
     },
     about: {
       subtitle: "Introduction",
       title: "About Me",
-      paragraph1: "I'm Gulomjon Vokhidov, a cybersecurity specialist. I have experience analyzing the security of networks and web applications, finding vulnerabilities and fixing them.",
-      paragraph2: "In every project I focus on reliably protecting client data and infrastructure. I constantly study new technologies and apply them in practice.",
+      paragraph1: "I'm Gulomjon Vokhidov, a cybersecurity specialist and full-stack developer. Beyond finding and fixing vulnerabilities in networks and web applications, I build complete software solutions in Python, Java, C++, C# and C.",
+      paragraph2: "In every project I focus on reliably protecting client data and infrastructure, as well as writing clean, stable code. I constantly study new technologies and apply them in practice.",
       statsProjectsLabel: "Completed Projects",
       statsExperienceLabel: "Years of Experience",
       statsClientsLabel: "Happy Clients"

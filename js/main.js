@@ -4,7 +4,8 @@
   var SUPPORTED_LANGS = ["uz", "ru", "en"];
 
   var TECH_TAGS = [
-    "Penetration Testing", "Network Security", "Python", "Linux", "OSINT",
+    "Penetration Testing", "Network Security", "Full-Stack Development",
+    "Python", "Java", "C++", "C#", "C", "HTML/CSS", "Linux", "OSINT",
     "SIEM", "Cloud Security", "Incident Response", "Cryptography",
     "CTF", "Bug Bounty", "Nmap", "Wireshark", "Burp Suite"
   ];
