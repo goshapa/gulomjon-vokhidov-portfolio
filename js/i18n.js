@@ -56,8 +56,9 @@ window.SITE_I18N = {
       subtitle: "Kreativ loyihalar",
       title: "AI-video",
       description: "Sun'iy intellekt yordamida yaratilgan qisqa videolar.",
+      placeholderNote: "Namuna sifatida vaqtinchalik video qo'yilgan — haqiqiy AI-video bilan almashtiring.",
       comingSoon: "Tez orada qo'shiladi",
-      captions: ["Loyiha #1", "Loyiha #2", "Loyiha #3"]
+      captions: ["Kod va dasturlash", "Tarmoq monitoring (matrix)", "Xavfsizlik tahlili"]
     },
     partners: {
       subtitle: "Ishonch",
@@ -143,8 +144,9 @@ window.SITE_I18N = {
       subtitle: "Креативные проекты",
       title: "AI-видео",
       description: "Короткие видео, созданные с помощью искусственного интеллекта.",
+      placeholderNote: "Временные демо-ролики — замените на настоящие AI-видео.",
       comingSoon: "Скоро будет добавлено",
-      captions: ["Проект №1", "Проект №2", "Проект №3"]
+      captions: ["Код и программирование", "Сетевой мониторинг (матрица)", "Анализ безопасности"]
     },
     partners: {
       subtitle: "Доверие",
@@ -230,8 +232,9 @@ window.SITE_I18N = {
       subtitle: "Creative Projects",
       title: "AI Video",
       description: "Short videos created with the help of artificial intelligence.",
+      placeholderNote: "Temporary demo clips — replace with real AI-generated videos.",
       comingSoon: "Coming soon",
-      captions: ["Project #1", "Project #2", "Project #3"]
+      captions: ["Code & Programming", "Network Monitoring (matrix)", "Security Analysis"]
     },
     partners: {
       subtitle: "Trust",

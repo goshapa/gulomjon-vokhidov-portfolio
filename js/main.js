@@ -191,13 +191,20 @@
     return m + ":" + (s < 10 ? "0" : "") + s;
   }
 
+  var VIDEO_SOURCES = ["assets/videos/ai-video-1.mp4", "assets/videos/ai-video-2.mp4", "assets/videos/ai-video-3.mp4"];
+
+  function iconBigPlay() {
+    return '<svg viewBox="0 0 24 24" fill="currentColor" width="56" height="56"><circle cx="12" cy="12" r="11" fill="rgba(0,0,0,0.35)"/><path d="M10 8.5v7l6-3.5z" fill="#fff"/></svg>';
+  }
+
   function videoCard(index, dict) {
     var caption = dict.aivideo.captions[index] || "";
+    var src = VIDEO_SOURCES[index];
     return (
       '<div class="video-card">' +
         '<div class="video-player" data-video-index="' + index + '">' +
-          '<video playsinline preload="none" poster="./gulomjon_photo.png"></video>' +
-          '<div class="video-overlay"><span class="badge-soon">' + dict.aivideo.comingSoon + "</span></div>" +
+          '<video playsinline preload="metadata" muted loop' + (src ? ' src="' + src + '"' : "") + "></video>" +
+          '<div class="video-overlay video-overlay-play">' + iconBigPlay() + "</div>" +
           '<div class="video-controls">' +
             '<button class="v-play" aria-label="Play">' + iconPlay() + "</button>" +
             '<div class="video-progress"><div class="video-progress-fill"></div></div>' +
@@ -219,23 +226,29 @@
 
     grid.querySelectorAll(".video-player").forEach(function (player) {
       var video = player.querySelector("video");
+      var overlay = player.querySelector(".video-overlay");
       var playBtn = player.querySelector(".v-play");
       var muteBtn = player.querySelector(".v-mute");
       var fsBtn = player.querySelector(".v-fullscreen");
       var progressFill = player.querySelector(".video-progress-fill");
       var timeEl = player.querySelector(".video-time");
 
-      if (!video.currentSrc && !video.querySelector("source")) {
+      if (!video.getAttribute("src")) {
         playBtn.disabled = true;
         muteBtn.disabled = true;
         fsBtn.disabled = true;
+        overlay.innerHTML = '<span class="badge-soon">' + dict.aivideo.comingSoon + "</span>";
         return;
       }
 
-      playBtn.addEventListener("click", function () {
-        if (video.paused) { video.play(); playBtn.innerHTML = iconPause(); }
-        else { video.pause(); playBtn.innerHTML = iconPlay(); }
-      });
+      function togglePlay() {
+        if (video.paused) { video.play(); playBtn.innerHTML = iconPause(); overlay.style.opacity = "0"; }
+        else { video.pause(); playBtn.innerHTML = iconPlay(); overlay.style.opacity = "1"; }
+      }
+
+      overlay.addEventListener("click", togglePlay);
+      playBtn.addEventListener("click", togglePlay);
+      video.addEventListener("ended", function () { overlay.style.opacity = "1"; playBtn.innerHTML = iconPlay(); });
       muteBtn.addEventListener("click", function () {
         video.muted = !video.muted;
         muteBtn.innerHTML = video.muted ? iconUnmute() : iconMute();
