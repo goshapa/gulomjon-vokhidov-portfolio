@@ -58,7 +58,7 @@ window.SITE_I18N = {
       title: "3D-studiya",
       description: "3D obyektlarni ko'ring — pastdagi tugmalar orqali modellarni almashtiring.",
       hint: "Aylantirish uchun torting",
-      models: { network: "Tarmoq", pistol: "Pistolet", rubik: "Rubik kubi" }
+      models: { network: "Tarmoq", watch: "Soat", rubik: "Rubik kubi" }
     },
     aivideo: {
       subtitle: "Kreativ loyihalar",
@@ -153,7 +153,7 @@ window.SITE_I18N = {
       title: "3D-студия",
       description: "3D-объекты — переключайтесь между моделями с помощью кнопок ниже.",
       hint: "Потяните, чтобы вращать",
-      models: { network: "Сеть", pistol: "Пистолет", rubik: "Кубик Рубика" }
+      models: { network: "Сеть", watch: "Часы", rubik: "Кубик Рубика" }
     },
     aivideo: {
       subtitle: "Креативные проекты",
@@ -248,7 +248,7 @@ window.SITE_I18N = {
       title: "3D Studio",
       description: "A few 3D objects — switch between models with the buttons below.",
       hint: "Drag to rotate",
-      models: { network: "Network", pistol: "Pistol", rubik: "Rubik's Cube" }
+      models: { network: "Network", watch: "Watch", rubik: "Rubik's Cube" }
     },
     aivideo: {
       subtitle: "Creative Projects",

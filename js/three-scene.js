@@ -175,119 +175,136 @@
     return group;
   }
 
-  function buildPistol() {
+  function buildWatch() {
     var group = new THREE.Group();
-    var polymer = new THREE.MeshPhysicalMaterial({ color: 0x1b1c1f, roughness: 0.7, clearcoat: 0.2, clearcoatRoughness: 0.5 });
-    var steel = new THREE.MeshPhysicalMaterial({ color: 0x4a4e57, metalness: 0.95, roughness: 0.22, clearcoat: 0.3, clearcoatRoughness: 0.2 });
-    var darkSteel = new THREE.MeshStandardMaterial({ color: 0x15161a, metalness: 0.85, roughness: 0.35 });
-    var brushed = new THREE.MeshStandardMaterial({ color: 0x2b2d33, metalness: 0.8, roughness: 0.5 });
-    var accent = new THREE.MeshStandardMaterial({ color: 0x22d3ee, emissive: 0x0e5a66, emissiveIntensity: 0.4, metalness: 0.4, roughness: 0.25 });
-    var brass = new THREE.MeshStandardMaterial({ color: 0xd8b463, metalness: 0.9, roughness: 0.3 });
+    var steel = new THREE.MeshPhysicalMaterial({ color: 0xc9cdd3, metalness: 1, roughness: 0.18, clearcoat: 0.5, clearcoatRoughness: 0.25 });
+    var steelBrushed = new THREE.MeshStandardMaterial({ color: 0xaeb3ba, metalness: 0.95, roughness: 0.45 });
+    var darkSteel = new THREE.MeshStandardMaterial({ color: 0x2a2c30, metalness: 0.9, roughness: 0.35 });
+    var dial = new THREE.MeshPhysicalMaterial({ color: 0x0b1220, metalness: 0.3, roughness: 0.35, clearcoat: 0.4, clearcoatRoughness: 0.3 });
+    var accent = new THREE.MeshStandardMaterial({ color: 0x22d3ee, emissive: 0x0e5a66, emissiveIntensity: 0.55, metalness: 0.4, roughness: 0.25 });
+    var gold = new THREE.MeshStandardMaterial({ color: 0xd8b463, metalness: 0.9, roughness: 0.3 });
+    var crystal = new THREE.MeshPhysicalMaterial({ color: 0xffffff, metalness: 0, roughness: 0.02, transmission: 0.95, thickness: 0.05, clearcoat: 1, ior: 1.5, transparent: true, opacity: 0.35 });
+    var leather = new THREE.MeshPhysicalMaterial({ color: 0x241a15, roughness: 0.85, clearcoat: 0.15, clearcoatRoughness: 0.6 });
 
-    // Slide (upper, steel) — rounded top edge instead of a sharp box
-    var slide = edged(new THREE.Mesh(roundedBoxX(1.95, 0.32, 0.36, 0.05), steel), 0x000000, 0.35, 45);
-    slide.position.set(0.12, 0.36, 0);
-    group.add(slide);
-
-    // Ejection port cut-out (visual recess) + a hint of brass casing inside it
-    var port = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.05, 0.2), darkSteel);
-    port.position.set(0.18, 0.5, 0);
-    group.add(port);
-    var casing = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.045, 0.12, 12), brass);
-    casing.rotation.z = Math.PI / 2;
-    casing.position.set(0.2, 0.49, 0.02);
-    group.add(casing);
-
-    // Rear + front slide serrations (grooves for racking grip)
-    for (var i = 0; i < 7; i++) {
-      var groove = new THREE.Mesh(new THREE.BoxGeometry(0.022, 0.3, 0.38), darkSteel);
-      groove.position.set(-0.68 + i * 0.05, 0.36, 0);
-      group.add(groove);
-    }
-    for (var fi = 0; fi < 5; fi++) {
-      var fgroove = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.3, 0.38), darkSteel);
-      fgroove.position.set(0.66 + fi * 0.045, 0.36, 0);
-      group.add(fgroove);
+    // Case (rounded cylindrical body) with a fluted bezel ring on top
+    var caseBody = new THREE.Mesh(new THREE.CylinderGeometry(1.05, 1.02, 0.42, 48), steel);
+    group.add(castRecv(caseBody));
+    var bezel = new THREE.Mesh(new THREE.TorusGeometry(0.98, 0.09, 16, 48), steelBrushed);
+    bezel.rotation.x = Math.PI / 2;
+    bezel.position.y = 0.21;
+    group.add(bezel);
+    for (var f = 0; f < 60; f++) {
+      var a = (f / 60) * Math.PI * 2;
+      var flute = new THREE.Mesh(new THREE.BoxGeometry(0.03, 0.05, 0.16), darkSteel);
+      flute.position.set(Math.cos(a) * 1.0, 0.235, Math.sin(a) * 1.0);
+      flute.rotation.y = -a;
+      group.add(flute);
     }
 
-    // Rear sight (notch) & front sight (post with accent dot)
-    var rearSight = new THREE.Mesh(roundedBoxX(0.09, 0.07, 0.3, 0.015), darkSteel);
-    rearSight.position.set(-0.8, 0.55, 0);
-    group.add(rearSight);
-    var frontSightBody = new THREE.Mesh(roundedBoxX(0.05, 0.08, 0.05, 0.012), darkSteel);
-    frontSightBody.position.set(1.0, 0.55, 0);
-    group.add(frontSightBody);
-    var frontSightDot = new THREE.Mesh(new THREE.SphereGeometry(0.018, 10, 10), accent);
-    frontSightDot.position.set(1.0, 0.58, 0);
-    group.add(frontSightDot);
+    // Dial + crystal
+    var dialMesh = new THREE.Mesh(new THREE.CylinderGeometry(0.86, 0.86, 0.06, 48), dial);
+    dialMesh.position.y = 0.19;
+    group.add(dialMesh);
+    var crystalMesh = new THREE.Mesh(new THREE.CylinderGeometry(0.88, 0.88, 0.05, 48), crystal);
+    crystalMesh.position.y = 0.24;
+    group.add(crystalMesh);
 
-    // Barrel / muzzle with visible crown + accent bushing
-    var barrel = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 0.18, 28), steel);
-    barrel.rotation.z = Math.PI / 2;
-    barrel.position.set(1.08, 0.36, 0);
-    group.add(barrel);
-    var bore = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.055, 0.06, 20), new THREE.MeshStandardMaterial({ color: 0x050505, metalness: 0.2, roughness: 0.9 }));
-    bore.rotation.z = Math.PI / 2;
-    bore.position.set(1.17, 0.36, 0);
-    group.add(bore);
-    var muzzle = new THREE.Mesh(new THREE.TorusGeometry(0.075, 0.018, 12, 24), accent);
-    muzzle.rotation.y = Math.PI / 2;
-    muzzle.position.set(1.15, 0.36, 0);
-    group.add(muzzle);
+    // Hour indices (12 luminous batons) + minute track dots
+    var idxGeo = new THREE.BoxGeometry(0.06, 0.03, 0.16);
+    for (var h = 0; h < 12; h++) {
+      var ha = (h / 12) * Math.PI * 2;
+      var idx = new THREE.Mesh(idxGeo, h % 3 === 0 ? gold : steelBrushed);
+      idx.position.set(Math.sin(ha) * 0.68, 0.225, Math.cos(ha) * 0.68);
+      idx.rotation.y = -ha;
+      group.add(idx);
+    }
+    var dotGeo = new THREE.SphereGeometry(0.012, 8, 8);
+    var dotMat = new THREE.MeshStandardMaterial({ color: 0x8a94a6, roughness: 0.6 });
+    for (var m = 0; m < 60; m++) {
+      if (m % 5 === 0) continue;
+      var ma = (m / 60) * Math.PI * 2;
+      var dot = new THREE.Mesh(dotGeo, dotMat);
+      dot.position.set(Math.sin(ma) * 0.79, 0.225, Math.cos(ma) * 0.79);
+      group.add(dot);
+    }
 
-    // Frame / dust cover (polymer, lower) — rounded
-    var frame = edged(new THREE.Mesh(roundedBoxX(1.15, 0.28, 0.34, 0.045), polymer), 0x000000, 0.3, 45);
-    frame.position.set(-0.2, 0.14, 0);
-    group.add(frame);
+    // Watch hands (hour / minute / seconds) pivoting on a center post
+    var pivot = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.1, 16), gold);
+    pivot.position.y = 0.24;
+    group.add(pivot);
+    var hourHand = new THREE.Mesh(roundedBoxX(0.44, 0.05, 0.02, 0.02), steelBrushed);
+    hourHand.position.set(0.1, 0.26, 0.12);
+    hourHand.rotation.y = -0.9;
+    group.add(hourHand);
+    var minuteHand = new THREE.Mesh(roundedBoxX(0.64, 0.045, 0.018, 0.018), steelBrushed);
+    minuteHand.position.set(-0.18, 0.27, -0.22);
+    minuteHand.rotation.y = 2.1;
+    group.add(minuteHand);
+    var secHand = new THREE.Mesh(roundedBoxX(0.72, 0.015, 0.015, 0.007), accent);
+    secHand.position.set(0.2, 0.28, -0.3);
+    secHand.rotation.y = 1.15;
+    group.add(secHand);
+    group.userData.onFrame = function () {
+      secHand.rotation.y += 0.02;
+    };
 
-    // Takedown lever + slide release
-    var takedown = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.05, 16), brushed);
-    takedown.rotation.x = Math.PI / 2;
-    takedown.position.set(0.1, 0.24, 0.2);
-    group.add(takedown);
-    var slideRelease = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.035, 0.05), brushed);
-    slideRelease.position.set(-0.02, 0.28, 0.2);
-    group.add(slideRelease);
+    // Crown + a small chronograph pusher above/below it
+    var crown = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.09, 0.14, 20), steelBrushed);
+    crown.rotation.z = Math.PI / 2;
+    crown.position.set(0, 0.02, 1.08);
+    group.add(edged(crown, 0x000000, 0.3, 40));
+    var pusherTop = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 0.09, 14), darkSteel);
+    pusherTop.rotation.z = Math.PI / 2;
+    pusherTop.position.set(0, 0.28, 0.98);
+    group.add(pusherTop);
+    var pusherBottom = pusherTop.clone();
+    pusherBottom.position.y = -0.24;
+    group.add(pusherBottom);
 
-    // Grip (angled polymer, rounded) with a magwell flare at the base
-    var grip = edged(new THREE.Mesh(roundedBoxY(0.36, 0.92, 0.3, 0.06), polymer), 0x000000, 0.3, 45);
-    grip.position.set(-0.62, -0.44, 0);
-    grip.rotation.z = -0.22;
-    group.add(grip);
+    // Lugs connecting the case to the strap
+    var lugMat = steel;
+    [[0.62, 1], [0.62, -1]].forEach(function (pair) {
+      [1, -1].forEach(function (side) {
+        var lug = new THREE.Mesh(roundedBoxX(0.42, 0.16, 0.5, 0.05), lugMat);
+        lug.position.set(pair[1] * (pair[0]), -0.12, side * 0.92);
+        lug.rotation.z = pair[1] * 0.55;
+        group.add(castRecv(lug));
+      });
+    });
 
-    // Stippled grip texture — a grid of tiny raised polymer bumps instead of flat ridges
-    var stippleMat = new THREE.MeshStandardMaterial({ color: 0x18191c, roughness: 0.9 });
-    var stippleGeo = new THREE.SphereGeometry(0.017, 6, 6);
-    for (var sx = 0; sx < 3; sx++) {
-      for (var sy = 0; sy < 6; sy++) {
-        var bump = new THREE.Mesh(stippleGeo, stippleMat);
-        var lx = -0.13 + sx * 0.13;
-        var ly = -0.32 + sy * 0.13 + (sx % 2 ? 0.06 : 0);
-        bump.position.set(lx, ly, 0.151);
-        group.add(bump);
-        var bump2 = bump.clone();
-        bump2.position.z = -0.151;
-        group.add(bump2);
+    // Leather strap — two tapered bands curving away from the case, plus a buckle
+    function strapBand(dir) {
+      var band = new THREE.Group();
+      var segs = 6, segLen = 0.36;
+      var x = dir * 1.0, y = -0.16, angle = 0;
+      for (var i = 0; i < segs; i++) {
+        var t = i / (segs - 1);
+        var w = 0.72 - t * 0.28;
+        var stepAngle = 0.14 + t * 0.24;
+        var dx = dir * Math.cos(angle) * segLen;
+        var dy = -Math.sin(angle) * segLen;
+        var nx = x + dx, ny = y + dy;
+        var seg = new THREE.Mesh(roundedBoxX(segLen * 1.05, 0.06, w, 0.05), leather);
+        seg.position.set((x + nx) / 2, (y + ny) / 2, 0);
+        seg.rotation.z = Math.atan2(dy, dx);
+        band.add(castRecv(seg));
+        x = nx; y = ny;
+        angle += stepAngle;
       }
+      band.userData.end = { x: x, y: y };
+      return band;
     }
+    group.add(strapBand(1));
+    var tailBand = strapBand(-1);
+    group.add(tailBand);
+    var buckle = new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.03, 10, 24), steelBrushed);
+    buckle.position.set(tailBand.userData.end.x + 0.1, tailBand.userData.end.y, 0);
+    buckle.rotation.y = Math.PI / 2;
+    group.add(buckle);
 
-    // Magazine base plate
-    var magBase = new THREE.Mesh(roundedBoxY(0.34, 0.09, 0.3, 0.03), darkSteel);
-    magBase.position.set(-0.79, -0.93, 0);
-    magBase.rotation.z = -0.22;
-    group.add(magBase);
-
-    // Trigger guard + trigger + trigger safety blade
-    var guard = new THREE.Mesh(new THREE.TorusGeometry(0.17, 0.032, 12, 28, Math.PI * 1.4), polymer);
-    guard.position.set(-0.18, -0.14, 0);
-    guard.rotation.z = Math.PI * 0.62;
-    group.add(guard);
-    var trigger = new THREE.Mesh(roundedBoxX(0.055, 0.15, 0.07, 0.02), accent);
-    trigger.position.set(-0.16, -0.12, 0);
-    group.add(trigger);
-
-    group.rotation.z = 0.03;
-    group.scale.setScalar(1.05);
+    group.rotation.x = -0.25;
+    group.rotation.z = 0.08;
+    group.scale.setScalar(0.85);
     castRecv(group);
     return group;
   }
@@ -363,10 +380,10 @@
 
     var models = {
       network: buildNetwork(),
-      pistol: buildPistol(),
+      watch: buildWatch(),
       rubik: buildRubik()
     };
-    var order = ["network", "pistol", "rubik"];
+    var order = ["network", "watch", "rubik"];
     var initial = (window.pendingStudio3DModel && models[window.pendingStudio3DModel]) ? window.pendingStudio3DModel : "network";
     order.forEach(function (key2) {
       models[key2].visible = key2 === initial;
