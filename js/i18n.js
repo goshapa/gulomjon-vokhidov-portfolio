@@ -34,16 +34,16 @@ window.SITE_I18N = {
     },
     projects: {
       subtitle: "Portfolio",
-      title: "Loyihalar",
+      title: "Mening loyihalarim",
       showAll: "Barchasini ko'rsatish",
       showLess: "Kamroq ko'rsatish",
       visitSite: "Saytga o'tish",
-      placeholderNote: "Bu bo'lim namuna sifatida to'ldirilgan — haqiqiy loyihalar bilan almashtiring.",
+      viewRepo: "GitHub'da ko'rish",
+      placeholderNote: "Loyihalar GitHub (github.com/goshapa) profilidan avtomatik olindi.",
       items: [
-        { category: "WEB APP", title: "Xavfsizlik monitoring paneli", description: "Tarmoq hodisalarini real vaqtda kuzatish uchun dashboard." },
-        { category: "SECURITY TOOL", title: "Zaifliklarni skanerlash vositasi", description: "Veb-ilovalardagi zaifliklarni avtomatik aniqlovchi vosita." },
-        { category: "FINTECH", title: "Xavfsiz to'lov shlyuzi", description: "Fintech loyihasi uchun xavfsizlik auditi va himoya." },
-        { category: "WEB APP", title: "Tarmoq trafigini tahlil qilish", description: "Shubhali trafikni aniqlash uchun vizual tahlil vositasi." }
+        { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Shaxsiy portfolio sayti: ko'nikmalar, loyihalar va aloqa bo'limlari.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
+        { category: "LANDING PAGE", title: "Goshapa Development", description: "Telegram-botlar va IT-yechimlar bo'yicha xizmatlarni taqdim etuvchi lending sahifa.", url: "https://goshapa.github.io/website/", isLive: true },
+        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "O'quv markazi uchun Telegram-bot: testlar, savollar bazasi va natijalar statistikasi.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
       ]
     },
     studio3d: {
@@ -122,16 +122,16 @@ window.SITE_I18N = {
     },
     projects: {
       subtitle: "Портфолио",
-      title: "Проекты",
+      title: "Мои проекты",
       showAll: "Показать все",
       showLess: "Скрыть",
       visitSite: "Перейти на сайт",
-      placeholderNote: "Раздел заполнен примерами — замените на реальные проекты.",
+      viewRepo: "Смотреть на GitHub",
+      placeholderNote: "Проекты подтянуты автоматически с GitHub (github.com/goshapa).",
       items: [
-        { category: "WEB APP", title: "Панель мониторинга безопасности", description: "Дашборд для отслеживания сетевых событий в реальном времени." },
-        { category: "SECURITY TOOL", title: "Сканер уязвимостей", description: "Инструмент для автоматического поиска уязвимостей в веб-приложениях." },
-        { category: "FINTECH", title: "Защищённый платёжный шлюз", description: "Аудит безопасности и защита для финтех-проекта." },
-        { category: "WEB APP", title: "Анализ сетевого трафика", description: "Визуальный инструмент для выявления подозрительного трафика." }
+        { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Личный сайт-портфолио с разделами навыков, проектов и контактов.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
+        { category: "LANDING PAGE", title: "Goshapa Development", description: "Лендинг с продвижением услуг разработки Telegram-ботов и IT-решений.", url: "https://goshapa.github.io/website/", isLive: true },
+        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "Telegram-бот для учебного центра: тесты, база вопросов и статистика результатов.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
       ]
     },
     studio3d: {
@@ -210,16 +210,16 @@ window.SITE_I18N = {
     },
     projects: {
       subtitle: "Portfolio",
-      title: "Projects",
+      title: "My Projects",
       showAll: "Show All",
       showLess: "Show Less",
       visitSite: "Visit Site",
-      placeholderNote: "This section is filled with sample data — replace with real projects.",
+      viewRepo: "View on GitHub",
+      placeholderNote: "Projects are pulled automatically from GitHub (github.com/goshapa).",
       items: [
-        { category: "WEB APP", title: "Security Monitoring Dashboard", description: "A dashboard for tracking network events in real time." },
-        { category: "SECURITY TOOL", title: "Vulnerability Scanner", description: "A tool for automatically finding vulnerabilities in web apps." },
-        { category: "FINTECH", title: "Secure Payment Gateway", description: "Security audit and protection for a fintech project." },
-        { category: "WEB APP", title: "Network Traffic Analysis", description: "A visual tool for spotting suspicious traffic." }
+        { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Personal portfolio site with skills, projects and contact sections.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
+        { category: "LANDING PAGE", title: "Goshapa Development", description: "A landing page promoting Telegram bot and IT development services.", url: "https://goshapa.github.io/website/", isLive: true },
+        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "A Telegram bot for a learning centre: quizzes, a question bank and result statistics.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
       ]
     },
     studio3d: {

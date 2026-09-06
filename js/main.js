@@ -124,22 +124,26 @@
   }
 
   function browserMockCard(item, index, i18n) {
-    var demoUrl = "https://example.com";
+    var displayUrl = item.url.replace(/^https?:\/\//, "").replace(/\/$/, "");
+    var buttonLabel = item.isLive ? i18n.projects.visitSite : i18n.projects.viewRepo;
+    var mediaHtml = item.isLive
+      ? '<iframe class="browser-frame" src="' + item.url + '" loading="lazy" title="' + item.title + '"></iframe>' +
+        '<img class="browser-fallback-img" src="./gulomjon_photo.png" alt="' + item.title + '" loading="lazy">'
+      : '<img class="browser-fallback-img is-always-visible" src="' + item.image + '" alt="' + item.title + '" loading="lazy">';
     return (
       '<div class="project-card' + (index >= 2 ? " is-extra" : "") + '" data-index="' + index + '">' +
         '<div class="browser-mock">' +
           '<div class="browser-bar">' +
             '<span class="browser-dots"><span></span><span></span><span></span></span>' +
-            '<span class="browser-url">' + demoUrl + "</span>" +
+            '<span class="browser-url">' + displayUrl + "</span>" +
           "</div>" +
-          '<iframe class="browser-frame" src="' + demoUrl + '" loading="lazy" title="' + item.title + '"></iframe>' +
-          '<img class="browser-fallback-img" src="./gulomjon_photo.png" alt="' + item.title + '" loading="lazy">' +
+          mediaHtml +
         "</div>" +
         '<div class="project-body">' +
           '<span class="project-tag">' + item.category + "</span>" +
           '<h3 class="project-title">' + item.title + "</h3>" +
           '<p class="project-desc">' + item.description + "</p>" +
-          '<a class="btn btn-ghost btn-sm" href="' + demoUrl + '" target="_blank" rel="noopener noreferrer">' + i18n.projects.visitSite + "</a>" +
+          '<a class="btn btn-ghost btn-sm" href="' + item.url + '" target="_blank" rel="noopener noreferrer">' + buttonLabel + "</a>" +
         "</div>" +
       "</div>"
     );

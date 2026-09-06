@@ -601,6 +601,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   object-fit: cover;
   display: none;
 }
+.browser-fallback-img.is-always-visible { display: block; }
 @media (max-width: 640px) {
   .browser-frame { display: none; }
   .browser-fallback-img { display: block; }
