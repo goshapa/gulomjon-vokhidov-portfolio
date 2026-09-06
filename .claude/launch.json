@@ -4,7 +4,7 @@
     {
       "name": "vokhidov-site",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8899"],
+      "runtimeArgs": ["serve.py", "8899"],
       "port": 8899
     }
   ]

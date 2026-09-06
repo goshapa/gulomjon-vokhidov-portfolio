@@ -42,7 +42,6 @@ window.SITE_I18N = {
       showLess: "Kamroq ko'rsatish",
       visitSite: "Saytga o'tish",
       viewRepo: "GitHub'da ko'rish",
-      placeholderNote: "Loyihalar GitHub (github.com/goshapa) profilidan avtomatik olindi.",
       items: [
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Shaxsiy portfolio sayti: ko'nikmalar, loyihalar va aloqa bo'limlari.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "Telegram-botlar va IT-yechimlar bo'yicha xizmatlarni taqdim etuvchi lending sahifa.", url: "https://goshapa.github.io/website/", isLive: true },
@@ -65,7 +64,6 @@ window.SITE_I18N = {
       subtitle: "Kreativ loyihalar",
       title: "AI-video",
       description: "Sun'iy intellekt yordamida yaratilgan qisqa videolar.",
-      placeholderNote: "Namuna sifatida vaqtinchalik video qo'yilgan — haqiqiy AI-video bilan almashtiring.",
       comingSoon: "Tez orada qo'shiladi",
       captions: ["Kod va dasturlash", "Tarmoq monitoring (matrix)", "Xavfsizlik tahlili"]
     },
@@ -139,7 +137,6 @@ window.SITE_I18N = {
       showLess: "Скрыть",
       visitSite: "Перейти на сайт",
       viewRepo: "Смотреть на GitHub",
-      placeholderNote: "Проекты подтянуты автоматически с GitHub (github.com/goshapa).",
       items: [
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Личный сайт-портфолио с разделами навыков, проектов и контактов.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "Лендинг с продвижением услуг разработки Telegram-ботов и IT-решений.", url: "https://goshapa.github.io/website/", isLive: true },
@@ -162,7 +159,6 @@ window.SITE_I18N = {
       subtitle: "Креативные проекты",
       title: "AI-видео",
       description: "Короткие видео, созданные с помощью искусственного интеллекта.",
-      placeholderNote: "Временные демо-ролики — замените на настоящие AI-видео.",
       comingSoon: "Скоро будет добавлено",
       captions: ["Код и программирование", "Сетевой мониторинг (матрица)", "Анализ безопасности"]
     },
@@ -236,7 +232,6 @@ window.SITE_I18N = {
       showLess: "Show Less",
       visitSite: "Visit Site",
       viewRepo: "View on GitHub",
-      placeholderNote: "Projects are pulled automatically from GitHub (github.com/goshapa).",
       items: [
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Personal portfolio site with skills, projects and contact sections.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "A landing page promoting Telegram bot and IT development services.", url: "https://goshapa.github.io/website/", isLive: true },
@@ -259,7 +254,6 @@ window.SITE_I18N = {
       subtitle: "Creative Projects",
       title: "AI Video",
       description: "Short videos created with the help of artificial intelligence.",
-      placeholderNote: "Temporary demo clips — replace with real AI-generated videos.",
       comingSoon: "Coming soon",
       captions: ["Code & Programming", "Network Monitoring (matrix)", "Security Analysis"]
     },
