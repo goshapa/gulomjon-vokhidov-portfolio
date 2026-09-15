@@ -45,7 +45,18 @@ window.SITE_I18N = {
       items: [
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Shaxsiy portfolio sayti: ko'nikmalar, loyihalar va aloqa bo'limlari.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "Telegram-botlar va IT-yechimlar bo'yicha xizmatlarni taqdim etuvchi lending sahifa.", url: "https://goshapa.github.io/website/", isLive: true },
-        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "O'quv markazi uchun Telegram-bot: testlar, savollar bazasi va natijalar statistikasi.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
+        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "O'quv markazi uchun Telegram-bot: testlar, savollar bazasi va natijalar statistikasi.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" },
+        { category: "SOCIAL NETWORK", title: "Yoz — Fikringni yoz", description: "O'zbekiston uchun qisqa postlar ijtimoiy tarmog'i: lenta, profillar, layklar, repostlar va telefonga o'rnatish uchun PWA.", url: "https://yozapp.uz", isLive: true },
+        { category: "CASE STUDY", title: "Yoz — loyiha keysi", description: "Yoz ijtimoiy tarmog'i haqida keys-sahifa: arxitektura, interfeys va loyihaning asosiy yechimlari.", url: "https://goshapa.github.io/yoz-case-study/", isLive: true },
+        { category: "MARKETPLACE", title: "Kasbdor", description: "Xizmatlar agregatori sayti: mijozlar ishonchli ustalarni topadi — ta'mirlash, tozalash, repetitorlar, go'zallik — interfeys rus va o'zbek tillarida.", url: "https://goshapa.github.io/kasbdor/", isLive: true },
+        { category: "ART SITE", title: "Abadiy partiya", description: "«Shaxmat partiyasi» rasmi asosidagi atmosferali sayt-hikoya: zulmat, nur va inson bitta taxta atrofida.", url: "https://goshapa.github.io/shaxmati/", isLive: true },
+        { category: "REFERENCE APP", title: "O'rmon zamburug'lari — qo'llanma", description: "O'rmonda eng ko'p uchraydigan sakkizta zamburug' bo'yicha ma'lumotnoma: tashqi ko'rinishi, xavflilik darajasi va yashash muhiti.", url: "https://goshapa.github.io/forest-mushroom-guide/", isLive: true },
+        { category: "REFERENCE APP", title: "Yog'och turlari — qo'llanma", description: "Yog'och turlari katalogi: qattiqligi, teksturasi, rangi va qo'llanilishi — mebeldan tashqi pardozgacha.", url: "https://goshapa.github.io/wood-species-guide/", isLive: true },
+        { category: "LANDING PAGE", title: "Banch Cafe", description: "Onlayn menyu va buyurtma berish imkoniyatiga ega kafe lending sahifasi.", url: "https://goshapa.github.io/bon-cafe/", isLive: true },
+        { category: "LANDING PAGE", title: "Veilisia Studio", description: "Go'zallik studiyasi lending sahifasi: xizmatlar, ustalar va onlayn yozilish.", url: "https://goshapa.github.io/goshapa-studio/", isLive: true },
+        { category: "WEB APP", title: "Dental Patient Records", description: "Stomatologiya bemorlarini hisobga olish tizimi: ma'lumot kiritish uchun Telegram-bot va tashriflar tarixini ko'rish uchun veb-ilova, Vercel serverless infratuzilmasida.", url: "https://github.com/goshapa/dental-patients", isLive: false },
+        { category: "TELEGRAM BOT", title: "Goshapa Student Assistant", description: "Python/aiogram 3'da yozilgan shaxsiy Telegram-bot: dars jadvali, Canvas LMS topshiriqlari va muddatlarni kuzatib boradi.", url: "https://github.com/goshapa/goshapa-student-assistant", isLive: false },
+        { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "Sayt va Telegram-botlar ishlab chiqish uchun buyurtmalarni qabul qiluvchi Telegram-bot: paket tanlash, anketa va administratorga bildirishnoma.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
     },
     certificates: {
@@ -140,7 +151,18 @@ window.SITE_I18N = {
       items: [
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Личный сайт-портфолио с разделами навыков, проектов и контактов.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "Лендинг с продвижением услуг разработки Telegram-ботов и IT-решений.", url: "https://goshapa.github.io/website/", isLive: true },
-        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "Telegram-бот для учебного центра: тесты, база вопросов и статистика результатов.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
+        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "Telegram-бот для учебного центра: тесты, база вопросов и статистика результатов.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" },
+        { category: "SOCIAL NETWORK", title: "Yoz — Fikringni yoz", description: "Социальная сеть коротких публикаций для Узбекистана: лента, профили, лайки, репосты и PWA для установки на телефон.", url: "https://yozapp.uz", isLive: true },
+        { category: "CASE STUDY", title: "Yoz — кейс проекта", description: "Лендинг-кейс о соцсети Yoz: архитектура, интерфейс и ключевые решения продукта.", url: "https://goshapa.github.io/yoz-case-study/", isLive: true },
+        { category: "MARKETPLACE", title: "Kasbdor", description: "Сайт-агрегатор услуг: клиенты находят проверенных мастеров — ремонт, уборка, репетиторы, красота — интерфейс на русском и узбекском.", url: "https://goshapa.github.io/kasbdor/", isLive: true },
+        { category: "ART SITE", title: "Вечная партия", description: "Атмосферный сторителлинг-сайт по мотивам картины «Шахматная партия»: тьма, свет и человек за одной доской.", url: "https://goshapa.github.io/shaxmati/", isLive: true },
+        { category: "REFERENCE APP", title: "Грибы леса — гид", description: "Справочник восьми самых распространённых лесных грибов: внешний вид, опасность и среда обитания.", url: "https://goshapa.github.io/forest-mushroom-guide/", isLive: true },
+        { category: "REFERENCE APP", title: "Породы дерева — гид", description: "Каталог пород древесины: твёрдость, текстура, цвет и применение — от мебели до наружной отделки.", url: "https://goshapa.github.io/wood-species-guide/", isLive: true },
+        { category: "LANDING PAGE", title: "Banch Cafe", description: "Лендинг кофейни с онлайн-меню и оформлением заказа.", url: "https://goshapa.github.io/bon-cafe/", isLive: true },
+        { category: "LANDING PAGE", title: "Veilisia Studio", description: "Лендинг бьюти-студии: услуги, мастера и онлайн-запись.", url: "https://goshapa.github.io/goshapa-studio/", isLive: true },
+        { category: "WEB APP", title: "Dental Patient Records", description: "Система учёта пациентов стоматологии: Telegram-бот для внесения данных и веб-приложение для истории визитов на serverless-инфраструктуре Vercel.", url: "https://github.com/goshapa/dental-patients", isLive: false },
+        { category: "TELEGRAM BOT", title: "Goshapa Student Assistant", description: "Личный Telegram-бот на Python/aiogram 3: следит за расписанием, заданиями Canvas LMS и дедлайнами.", url: "https://github.com/goshapa/goshapa-student-assistant", isLive: false },
+        { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "Telegram-бот для приёма заявок на разработку сайтов и ботов: выбор пакета, анкета и уведомления администратору.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
     },
     certificates: {
@@ -235,7 +257,18 @@ window.SITE_I18N = {
       items: [
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Personal portfolio site with skills, projects and contact sections.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "A landing page promoting Telegram bot and IT development services.", url: "https://goshapa.github.io/website/", isLive: true },
-        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "A Telegram bot for a learning centre: quizzes, a question bank and result statistics.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" }
+        { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "A Telegram bot for a learning centre: quizzes, a question bank and result statistics.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" },
+        { category: "SOCIAL NETWORK", title: "Yoz — Fikringni yoz", description: "A short-post social network for Uzbekistan: feed, profiles, likes, reposts, and an installable PWA.", url: "https://yozapp.uz", isLive: true },
+        { category: "CASE STUDY", title: "Yoz — Project Case Study", description: "A case-study landing page for the Yoz social network: architecture, interface and key product decisions.", url: "https://goshapa.github.io/yoz-case-study/", isLive: true },
+        { category: "MARKETPLACE", title: "Kasbdor", description: "A services marketplace where clients find vetted professionals — repairs, cleaning, tutoring, beauty — with a Russian/Uzbek interface.", url: "https://goshapa.github.io/kasbdor/", isLive: true },
+        { category: "ART SITE", title: "The Eternal Game", description: "An atmospheric storytelling site inspired by 'The Chess Players' painting: darkness, light and a human at one board.", url: "https://goshapa.github.io/shaxmati/", isLive: true },
+        { category: "REFERENCE APP", title: "Forest Mushroom Guide", description: "A reference guide to the eight most common forest mushrooms: appearance, danger level and habitat.", url: "https://goshapa.github.io/forest-mushroom-guide/", isLive: true },
+        { category: "REFERENCE APP", title: "Wood Species Guide", description: "A catalogue of wood species: hardness, grain, colour and use — from furniture to exterior finishing.", url: "https://goshapa.github.io/wood-species-guide/", isLive: true },
+        { category: "LANDING PAGE", title: "Banch Cafe", description: "A cafe landing page with an online menu and order flow.", url: "https://goshapa.github.io/bon-cafe/", isLive: true },
+        { category: "LANDING PAGE", title: "Veilisia Studio", description: "A beauty studio landing page: services, specialists and online booking.", url: "https://goshapa.github.io/goshapa-studio/", isLive: true },
+        { category: "WEB APP", title: "Dental Patient Records", description: "A dental patient-records system: a Telegram bot for data entry and a web app for visit history, on Vercel's serverless infrastructure.", url: "https://github.com/goshapa/dental-patients", isLive: false },
+        { category: "TELEGRAM BOT", title: "Goshapa Student Assistant", description: "A personal Telegram bot built with Python/aiogram 3 that tracks a class schedule, Canvas LMS assignments and deadlines.", url: "https://github.com/goshapa/goshapa-student-assistant", isLive: false },
+        { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "A Telegram bot for taking website and bot-development orders: package selection, an intake form and admin notifications.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
     },
     certificates: {
