@@ -4,13 +4,13 @@
   var SUPPORTED_LANGS = ["uz", "ru", "en"];
 
   var TECH_TAGS = [
-    "Penetration Testing", "Network Security", "Full-Stack Development",
-    "Python", "Java", "C++", "C#", "C", "HTML/CSS", "Linux", "OSINT",
-    "SIEM", "Cloud Security", "Incident Response", "Cryptography",
-    "CTF", "Bug Bounty", "Nmap", "Wireshark", "Burp Suite"
+    "Full-Stack Development", "Telegram Bots", "AI Integrations", "AI Agents",
+    "LLM APIs", "Web Apps", "Mobile Apps", "PWA",
+    "Python", "aiogram", "JavaScript", "TypeScript", "React", "Node.js",
+    "HTML/CSS", "Java", "C#", "C++", "REST API", "PostgreSQL", "Vercel", "Git"
   ];
 
-  var PARTNER_PLACEHOLDERS = ["TechCorp", "SecureNet", "CyberShield", "DataGuard", "NetVantage", "ShieldWorks"];
+  var PARTNER_PLACEHOLDERS = ["TechCorp", "WebNova", "BotForge", "DataFlow", "NetVantage", "AppWorks"];
 
   var CERTIFICATES = [
     { file: "freecodecamp-responsive-web-design.png", title: "Responsive Web Design", issuer: "freeCodeCamp" },

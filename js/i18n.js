@@ -1,8 +1,8 @@
 window.SITE_I18N = {
   uz: {
     seo: {
-      title: "Gulomjon Vokhidov — Kiberxavfsizlik mutaxassisi va Full-Stack dasturchi",
-      description: "Gulomjon Vokhidovning portfolio sayti: kiberxavfsizlik, full-stack dasturlash (Python, Java, C++, C#, C) va penetratsion testlar bo'yicha loyihalar."
+      title: "Gulomjon Vokhidov — Full-Stack dasturchi: saytlar, Telegram-botlar, AI-agentlar",
+      description: "Gulomjon Vokhidovning portfoliosi: saytlar, Telegram-botlar, AI-integratsiyalar, AI-agentlar va ilovalar ishlab chiqish."
     },
     nav: {
       home: "Bosh sahifa",
@@ -15,20 +15,20 @@ window.SITE_I18N = {
       contact: "Aloqa"
     },
     hero: {
-      badge: "Kiberxavfsizlik va Full-Stack dasturlash",
+      badge: "Full-Stack dasturchi",
       statusOnline: "Onlayn",
       greeting: "Salom, men",
-      titleLine1: "Xavfsizlik mutaxassisi,",
-      titleAccent: "full-stack dasturchi",
-      description: "Kiberxavfsizlik va full-stack dasturlash yo'nalishlarida ishlayman — penetratsion testlar va infratuzilmani himoyalashdan tortib, Python, Java, C++, C# va C tillarida to'liq ilovalar yaratishgacha.",
+      titleLine1: "Saytlar, botlar va AI —",
+      titleAccent: "boshidan oxirigacha",
+      description: "Men full-stack dasturchiman: saytlar, Telegram-botlar, AI-integratsiyalar, AI-agentlar va ilovalar yarataman — g'oyadan ishga tushirishgacha.",
       ctaProjects: "Loyihalarni ko'rish",
       ctaContact: "Bog'lanish"
     },
     about: {
       subtitle: "Tanishuv",
       title: "Men haqimda",
-      paragraph1: "Men Gulomjon Vokhidov — kiberxavfsizlik mutaxassisi va full-stack dasturchiman. Tarmoq va veb-ilovalar xavfsizligini tahlil qilish, zaifliklarni aniqlash va bartaraf etishdan tashqari, Python, Java, C++, C# va C tillarida to'liq dasturiy yechimlar yarataman.",
-      paragraph2: "Har bir loyihada mijozning ma'lumotlari va infratuzilmasini ishonchli himoya qilishga, shu bilan birga sifatli va barqaror kod yozishga e'tibor qarataman. Doimiy ravishda yangi texnologiyalarni o'rganaman va amaliyotda qo'llayman.",
+      paragraph1: "Men Gulomjon Vokhidov — full-stack dasturchiman. Biznes va shaxsiy loyihalar uchun saytlar, Telegram-botlar, veb va mobil ilovalar yarataman, mahsulotlarga sun'iy intellektni integratsiya qilaman va vazifalarni avtomatlashtiradigan AI-agentlar quraman.",
+      paragraph2: "Loyihani to'liq olib boraman: interfeys dizayni, frontend, backend, ma'lumotlar bazasi, API va deploy. Toza, barqaror kod va natijaga e'tibor beraman, yangi texnologiyalarni doimiy o'rganib, amaliyotda qo'llayman.",
       statsProjectsLabel: "Bajarilgan loyihalar",
       statsExperienceLabel: "Yillik tajriba",
       statsClientsLabel: "Mamnun mijozlar",
@@ -76,7 +76,7 @@ window.SITE_I18N = {
       title: "AI-video",
       description: "Sun'iy intellekt yordamida yaratilgan qisqa videolar.",
       comingSoon: "Tez orada qo'shiladi",
-      captions: ["Kod va dasturlash", "Tarmoq monitoring (matrix)", "Xavfsizlik tahlili"]
+      captions: ["Kod va dasturlash", "AI-agentlar", "Telegram-botlar"]
     },
     partners: {
       subtitle: "Ishonch",
@@ -85,7 +85,7 @@ window.SITE_I18N = {
     },
     cta: {
       title: "Loyihangizni boshlaylikmi?",
-      description: "Xavfsizlik bo'yicha savolingiz yoki loyihangiz bormi? Keling, gaplashib olaylik.",
+      description: "Sayt, Telegram-bot, AI-agent yoki ilova kerakmi? Keling, gaplashib olaylik.",
       button: "Loyihani boshlash"
     },
     contact: {
@@ -107,8 +107,8 @@ window.SITE_I18N = {
 
   ru: {
     seo: {
-      title: "Gulomjon Vokhidov — Специалист по кибербезопасности и Full-Stack разработчик",
-      description: "Портфолио Gulomjon Vokhidov: кибербезопасность, full-stack разработка (Python, Java, C++, C#, C) и пентестинг."
+      title: "Gulomjon Vokhidov — Full-Stack разработчик: сайты, Telegram-боты, ИИ-агенты",
+      description: "Портфолио Gulomjon Vokhidov: разработка сайтов, Telegram-ботов, ИИ-интеграций, ИИ-агентов и приложений."
     },
     nav: {
       home: "Главная",
@@ -121,20 +121,20 @@ window.SITE_I18N = {
       contact: "Контакты"
     },
     hero: {
-      badge: "Кибербезопасность и Full-Stack разработка",
+      badge: "Full-Stack разработчик",
       statusOnline: "Онлайн",
       greeting: "Привет, я",
-      titleLine1: "Специалист по безопасности,",
-      titleAccent: "full-stack разработчик",
-      description: "Работаю на стыке кибербезопасности и full-stack разработки — от пентестов и защиты инфраструктуры до создания полноценных приложений на Python, Java, C++, C# и C.",
+      titleLine1: "Сайты, боты и ИИ —",
+      titleAccent: "под ключ",
+      description: "Я full-stack разработчик: делаю сайты, Telegram-боты, интеграции ИИ, ИИ-агентов и приложения — от идеи до запуска.",
       ctaProjects: "Смотреть проекты",
       ctaContact: "Связаться"
     },
     about: {
       subtitle: "Знакомство",
       title: "Обо мне",
-      paragraph1: "Я Gulomjon Vokhidov — специалист по кибербезопасности и full-stack разработчик. Помимо поиска и устранения уязвимостей в сетях и веб-приложениях, создаю полноценные программные решения на Python, Java, C++, C# и C.",
-      paragraph2: "В каждом проекте уделяю особое внимание надёжной защите данных и инфраструктуры клиента, а также чистому и стабильному коду. Постоянно изучаю новые технологии и применяю их на практике.",
+      paragraph1: "Я Gulomjon Vokhidov — full-stack разработчик. Создаю сайты, Telegram-боты, веб- и мобильные приложения для бизнеса и личных проектов, встраиваю искусственный интеллект в продукты и собираю ИИ-агентов, которые автоматизируют рутинные задачи.",
+      paragraph2: "Веду проект целиком: дизайн интерфейса, фронтенд, бэкенд, база данных, API и деплой. Делаю упор на чистый, стабильный код и результат для клиента, постоянно изучаю новые технологии и применяю их на практике.",
       statsProjectsLabel: "Завершённых проектов",
       statsExperienceLabel: "Лет опыта",
       statsClientsLabel: "Довольных клиентов",
@@ -182,7 +182,7 @@ window.SITE_I18N = {
       title: "AI-видео",
       description: "Короткие видео, созданные с помощью искусственного интеллекта.",
       comingSoon: "Скоро будет добавлено",
-      captions: ["Код и программирование", "Сетевой мониторинг (матрица)", "Анализ безопасности"]
+      captions: ["Код и программирование", "ИИ-агенты", "Telegram-боты"]
     },
     partners: {
       subtitle: "Доверие",
@@ -191,7 +191,7 @@ window.SITE_I18N = {
     },
     cta: {
       title: "Начнём ваш проект?",
-      description: "Есть вопрос по безопасности или задача для реализации? Давайте обсудим.",
+      description: "Нужен сайт, Telegram-бот, ИИ-агент или приложение? Давайте обсудим.",
       button: "Начать проект"
     },
     contact: {
@@ -213,8 +213,8 @@ window.SITE_I18N = {
 
   en: {
     seo: {
-      title: "Gulomjon Vokhidov — Cybersecurity Specialist & Full-Stack Developer",
-      description: "Portfolio of Gulomjon Vokhidov: cybersecurity, full-stack development (Python, Java, C++, C#, C) and penetration testing projects."
+      title: "Gulomjon Vokhidov — Full-Stack Developer: Websites, Telegram Bots, AI Agents",
+      description: "Portfolio of Gulomjon Vokhidov: websites, Telegram bots, AI integrations, AI agents and applications."
     },
     nav: {
       home: "Home",
@@ -227,20 +227,20 @@ window.SITE_I18N = {
       contact: "Contact"
     },
     hero: {
-      badge: "Cybersecurity & Full-Stack Development",
+      badge: "Full-Stack Developer",
       statusOnline: "Online",
       greeting: "Hi, I'm",
-      titleLine1: "Security specialist,",
-      titleAccent: "full-stack developer",
-      description: "I work at the intersection of cybersecurity and full-stack development — from penetration testing and infrastructure protection to building complete applications in Python, Java, C++, C# and C.",
+      titleLine1: "Websites, bots and AI —",
+      titleAccent: "built end to end",
+      description: "I'm a full-stack developer building websites, Telegram bots, AI integrations, AI agents and applications — from idea to launch.",
       ctaProjects: "View Projects",
       ctaContact: "Get in Touch"
     },
     about: {
       subtitle: "Introduction",
       title: "About Me",
-      paragraph1: "I'm Gulomjon Vokhidov, a cybersecurity specialist and full-stack developer. Beyond finding and fixing vulnerabilities in networks and web applications, I build complete software solutions in Python, Java, C++, C# and C.",
-      paragraph2: "In every project I focus on reliably protecting client data and infrastructure, as well as writing clean, stable code. I constantly study new technologies and apply them in practice.",
+      paragraph1: "I'm Gulomjon Vokhidov, a full-stack developer. I build websites, Telegram bots, and web and mobile apps for businesses and personal projects, integrate AI into products, and create AI agents that automate routine work.",
+      paragraph2: "I handle the whole project: interface design, frontend, backend, database, APIs and deployment. I focus on clean, stable code and real results for the client, and I keep learning new technologies and putting them into practice.",
       statsProjectsLabel: "Completed Projects",
       statsExperienceLabel: "Years of Experience",
       statsClientsLabel: "Happy Clients",
@@ -288,7 +288,7 @@ window.SITE_I18N = {
       title: "AI Video",
       description: "Short videos created with the help of artificial intelligence.",
       comingSoon: "Coming soon",
-      captions: ["Code & Programming", "Network Monitoring (matrix)", "Security Analysis"]
+      captions: ["Code & Programming", "AI Agents", "Telegram Bots"]
     },
     partners: {
       subtitle: "Trust",
@@ -297,7 +297,7 @@ window.SITE_I18N = {
     },
     cta: {
       title: "Ready to start your project?",
-      description: "Have a security question or a project in mind? Let's talk.",
+      description: "Need a website, Telegram bot, AI agent or app? Let's talk.",
       button: "Start a Project"
     },
     contact: {
