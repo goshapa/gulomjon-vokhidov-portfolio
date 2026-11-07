@@ -37,11 +37,12 @@ window.SITE_I18N = {
     projects: {
       subtitle: "Portfolio",
       title: "Mening loyihalarim",
-      showAll: "Barchasini ko'rsatish",
-      showLess: "Kamroq ko'rsatish",
+      showAll: "Barcha ishlarni ko'rish →",
       visitSite: "Saytga o'tish",
       viewRepo: "GitHub'da ko'rish",
       items: [
+        { category: "LASER STUDIO", title: "Laser House", description: "Toshkent va Samarqanddagi lazer epilyatsiya studiyalari tarmog'i sayti: premium qora-oltin dizayn, uchta apparat, narxlar, filiallar va Telegram orqali yozilish.", url: "https://laserhouse.uz", isLive: true, image: "assets/laserhouse-preview.webp" },
+        { category: "TRAVEL GUIDE", title: "Samarkand Guide", description: "2007-yildan beri Samarqanddagi litsenziyali gid Eleonora Radjabova sayti: Registon, Go'ri Amir, Buxoro va Xivaga xususiy turlar va sayohatni to'liq rejalashtirish.", url: "https://samarkandguide.uz", isLive: true, image: "assets/samarkandguide-preview.webp" },
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Shaxsiy portfolio sayti: ko'nikmalar, loyihalar va aloqa bo'limlari.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "Telegram-botlar va IT-yechimlar bo'yicha xizmatlarni taqdim etuvchi lending sahifa.", url: "https://goshapa.github.io/website/", isLive: true },
         { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "O'quv markazi uchun Telegram-bot: testlar, savollar bazasi va natijalar statistikasi.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" },
@@ -142,11 +143,12 @@ window.SITE_I18N = {
     projects: {
       subtitle: "Портфолио",
       title: "Мои проекты",
-      showAll: "Показать все",
-      showLess: "Скрыть",
+      showAll: "Смотреть все работы →",
       visitSite: "Перейти на сайт",
       viewRepo: "Смотреть на GitHub",
       items: [
+        { category: "LASER STUDIO", title: "Laser House", description: "Сайт сети студий лазерной эпиляции в Ташкенте и Самарканде: премиальный чёрно-золотой дизайн, три аппарата, цены, филиалы и запись в Telegram.", url: "https://laserhouse.uz", isLive: true, image: "assets/laserhouse-preview.webp" },
+        { category: "TRAVEL GUIDE", title: "Samarkand Guide", description: "Сайт лицензированного гида Элеоноры Раджабовой из Самарканда: частные туры по Регистану, Гур-Эмиру, Бухаре и Хиве и планирование поездок под ключ.", url: "https://samarkandguide.uz", isLive: true, image: "assets/samarkandguide-preview.webp" },
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Личный сайт-портфолио с разделами навыков, проектов и контактов.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "Лендинг с продвижением услуг разработки Telegram-ботов и IT-решений.", url: "https://goshapa.github.io/website/", isLive: true },
         { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "Telegram-бот для учебного центра: тесты, база вопросов и статистика результатов.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" },
@@ -247,11 +249,12 @@ window.SITE_I18N = {
     projects: {
       subtitle: "Portfolio",
       title: "My Projects",
-      showAll: "Show All",
-      showLess: "Show Less",
+      showAll: "View all work →",
       visitSite: "Visit Site",
       viewRepo: "View on GitHub",
       items: [
+        { category: "LASER STUDIO", title: "Laser House", description: "A website for a chain of laser hair-removal studios in Tashkent and Samarkand: premium black-and-gold design, three devices, prices, branches and Telegram booking.", url: "https://laserhouse.uz", isLive: true, image: "assets/laserhouse-preview.webp" },
+        { category: "TRAVEL GUIDE", title: "Samarkand Guide", description: "A site for Eleonora Rajabova, a licensed Samarkand tour guide since 2007: private tours of Registan, Gur-Emir, Bukhara and Khiva, plus full trip planning.", url: "https://samarkandguide.uz", isLive: true, image: "assets/samarkandguide-preview.webp" },
         { category: "PORTFOLIO", title: "Goshapa — Code Knight", description: "Personal portfolio site with skills, projects and contact sections.", url: "https://goshapa.github.io/goshapa-portfolio/", isLive: true },
         { category: "LANDING PAGE", title: "Goshapa Development", description: "A landing page promoting Telegram bot and IT development services.", url: "https://goshapa.github.io/website/", isLive: true },
         { category: "TELEGRAM BOT", title: "LearningCentreBot", description: "A Telegram bot for a learning centre: quizzes, a question bank and result statistics.", url: "https://github.com/goshapa/LearningCentreBot", isLive: false, image: "assets/learningcentrebot-preview.png" },

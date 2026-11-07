@@ -2,6 +2,7 @@
   var LANG_KEY = "site-lang";
   var THEME_KEY = "site-theme";
   var SUPPORTED_LANGS = ["uz", "ru", "en"];
+  var VISIBLE_PROJECTS = 4;
 
   var TECH_TAGS = [
     "Full-Stack Development", "Telegram Bots", "AI Integrations", "AI Agents",
@@ -140,12 +141,12 @@
     var displayUrl = item.url.replace(/^https?:\/\//, "").replace(/\/$/, "");
     var buttonLabel = item.isLive ? i18n.projects.visitSite : i18n.projects.viewRepo;
     var mediaHtml;
-    if (item.isLive) {
+    if (item.image) {
+      mediaHtml = '<img class="browser-fallback-img is-always-visible" src="' + item.image + '" alt="' + item.title + '" loading="lazy">';
+    } else if (item.isLive) {
       mediaHtml = '<iframe class="browser-frame" src="' + item.url + '" loading="lazy" title="' + item.title + '"></iframe>' +
         '<img class="browser-fallback-img" src="./gulomjon_photo.png" alt="' + item.title + '" loading="lazy">' +
         '<div class="browser-loader"><span class="loader-spin"></span></div>';
-    } else if (item.image) {
-      mediaHtml = '<img class="browser-fallback-img is-always-visible" src="' + item.image + '" alt="' + item.title + '" loading="lazy">';
     } else {
       mediaHtml = '<div class="browser-fallback-placeholder">' +
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.1 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>' +
@@ -153,7 +154,7 @@
       "</div>";
     }
     return (
-      '<div class="project-card' + (index >= 2 ? " is-extra" : "") + '" data-index="' + index + '">' +
+      '<div class="project-card" data-index="' + index + '">' +
         '<div class="browser-mock">' +
           '<div class="browser-bar">' +
             '<span class="browser-dots"><span></span><span></span><span></span></span>' +
@@ -173,7 +174,7 @@
 
   function renderProjects(dict) {
     var grid = document.getElementById("projects-grid");
-    grid.innerHTML = dict.projects.items.map(function (item, i) {
+    grid.innerHTML = dict.projects.items.slice(0, VISIBLE_PROJECTS).map(function (item, i) {
       return browserMockCard(item, i, dict);
     }).join("");
 
@@ -182,23 +183,6 @@
         var loader = frame.parentElement.querySelector(".browser-loader");
         if (loader) loader.classList.add("is-hidden");
       });
-    });
-
-    var toggleBtn = document.getElementById("projects-toggle");
-    var expanded = toggleBtn.getAttribute("data-expanded") === "true";
-    toggleBtn.textContent = expanded ? dict.projects.showLess : dict.projects.showAll;
-    grid.querySelectorAll(".project-card.is-extra").forEach(function (card) {
-      card.classList.toggle("is-shown", expanded);
-    });
-  }
-
-  function initProjectsToggle() {
-    var btn = document.getElementById("projects-toggle");
-    btn.addEventListener("click", function () {
-      var expanded = btn.getAttribute("data-expanded") === "true";
-      btn.setAttribute("data-expanded", String(!expanded));
-      var dict = window.SITE_I18N[currentLang()];
-      renderProjects(dict);
     });
   }
 
@@ -360,7 +344,6 @@
     initHeaderScroll();
     initMarquee();
     initPartners();
-    initProjectsToggle();
     initFooterYear();
     applyTranslations(currentLang());
     initRevealAnimations();
