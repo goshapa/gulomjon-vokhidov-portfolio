@@ -8,7 +8,6 @@ window.SITE_I18N = {
       home: "Bosh sahifa",
       about: "Men haqimda",
       projects: "Loyihalar",
-      certificates: "Sertifikatlar",
       studio3d: "3D-studiya",
       aivideo: "AI-video",
       partners: "Hamkorlar",
@@ -58,11 +57,6 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "Goshapa Student Assistant", description: "Python/aiogram 3'da yozilgan shaxsiy Telegram-bot: dars jadvali, Canvas LMS topshiriqlari va muddatlarni kuzatib boradi.", url: "https://github.com/goshapa/goshapa-student-assistant", isLive: false },
         { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "Sayt va Telegram-botlar ishlab chiqish uchun buyurtmalarni qabul qiluvchi Telegram-bot: paket tanlash, anketa va administratorga bildirishnoma.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
-    },
-    certificates: {
-      subtitle: "Yutuqlar",
-      title: "Sertifikatlar",
-      description: "O'qib tugatgan kurslar va olingan sertifikatlar — kattalashtirish uchun bosing."
     },
     studio3d: {
       subtitle: "Vizualizatsiya",
@@ -114,7 +108,6 @@ window.SITE_I18N = {
       home: "Главная",
       about: "Обо мне",
       projects: "Проекты",
-      certificates: "Сертификаты",
       studio3d: "3D-студия",
       aivideo: "AI-видео",
       partners: "Партнёры",
@@ -164,11 +157,6 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "Goshapa Student Assistant", description: "Личный Telegram-бот на Python/aiogram 3: следит за расписанием, заданиями Canvas LMS и дедлайнами.", url: "https://github.com/goshapa/goshapa-student-assistant", isLive: false },
         { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "Telegram-бот для приёма заявок на разработку сайтов и ботов: выбор пакета, анкета и уведомления администратору.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
-    },
-    certificates: {
-      subtitle: "Достижения",
-      title: "Сертификаты",
-      description: "Пройденные курсы и полученные сертификаты — нажмите, чтобы увеличить."
     },
     studio3d: {
       subtitle: "Визуализация",
@@ -220,7 +208,6 @@ window.SITE_I18N = {
       home: "Home",
       about: "About",
       projects: "Projects",
-      certificates: "Certificates",
       studio3d: "3D Studio",
       aivideo: "AI Video",
       partners: "Partners",
@@ -270,11 +257,6 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "Goshapa Student Assistant", description: "A personal Telegram bot built with Python/aiogram 3 that tracks a class schedule, Canvas LMS assignments and deadlines.", url: "https://github.com/goshapa/goshapa-student-assistant", isLive: false },
         { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "A Telegram bot for taking website and bot-development orders: package selection, an intake form and admin notifications.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
-    },
-    certificates: {
-      subtitle: "Achievements",
-      title: "Certificates",
-      description: "Courses completed and certificates earned — click to enlarge."
     },
     studio3d: {
       subtitle: "Visualization",

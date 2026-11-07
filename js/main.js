@@ -12,24 +12,6 @@
 
   var PARTNER_PLACEHOLDERS = ["TechCorp", "WebNova", "BotForge", "DataFlow", "NetVantage", "AppWorks"];
 
-  var CERTIFICATES = [
-    { file: "freecodecamp-responsive-web-design.png", title: "Responsive Web Design", issuer: "freeCodeCamp" },
-    { file: "google-it-automation-python.png", title: "IT Automation with Python", issuer: "Google Career Certificates" },
-    { file: "microsoft-azure-fundamentals.png", title: "Introduction to Azure Fundamentals", issuer: "Microsoft Learn" },
-    { file: "ibm-python-data-science.png", title: "Python for Data Science", issuer: "IBM SkillsBuild" },
-    { file: "cisco-intro-cybersecurity.png", title: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy" },
-    { file: "oracle-java-essentials.png", title: "Java Programming Essentials", issuer: "Oracle University" },
-    { file: "hackerrank-python-basic.png", title: "Python (Basic)", issuer: "HackerRank" },
-    { file: "udemy-web-dev-bootcamp.png", title: "The Complete Web Development Bootcamp", issuer: "Udemy" },
-    { file: "coursera-python-programming.png", title: "Python Programming", issuer: "Coursera (Google)" },
-    { file: "freecodecamp-js-algorithms.png", title: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp" },
-    { file: "google-ml-crash-course.png", title: "Machine Learning Crash Course", issuer: "Google" },
-    { file: "comptia-itf-plus.png", title: "IT Fundamentals+ (ITF+)", issuer: "CompTIA" },
-    { file: "meta-fullstack-react-node.png", title: "Build and Deploy a Full-Stack App with React & Node.js", issuer: "Meta" },
-    { file: "w3schools-html-css-js.png", title: "HTML, CSS & JavaScript (Beginner to Advanced)", issuer: "W3Schools" },
-    { file: "tashkent-tech-academy-web-workshop.png", title: "Web Development Workshop", issuer: "Tashkent Tech Academy" }
-  ];
-
   function loadScript(src) {
     return new Promise(function (resolve, reject) {
       var s = document.createElement("script");
@@ -360,64 +342,6 @@
     });
   }
 
-  function iconZoom() {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>';
-  }
-
-  function renderCertificates() {
-    var grid = document.getElementById("certificates-grid");
-    if (!grid) return;
-    var html = CERTIFICATES.map(function (c, i) {
-      return (
-        '<div class="cert-card" tabindex="0" data-cert-index="' + i + '">' +
-          '<img src="assets/certificates/' + c.file + '" alt="' + c.title + '" loading="lazy">' +
-          '<div class="cert-card-zoom">' + iconZoom() + "</div>" +
-          '<div class="cert-card-overlay">' +
-            '<div class="cert-card-title">' + c.title + "</div>" +
-            '<div class="cert-card-issuer">' + c.issuer + "</div>" +
-          "</div>" +
-        "</div>"
-      );
-    }).join("");
-    grid.innerHTML = html;
-
-    var lightbox = document.getElementById("cert-lightbox");
-    var lightboxImg = document.getElementById("cert-lightbox-img");
-    var lightboxTitle = document.getElementById("cert-lightbox-title");
-    var lightboxIssuer = document.getElementById("cert-lightbox-issuer");
-    if (!lightbox) return;
-
-    function openCert(index) {
-      var c = CERTIFICATES[index];
-      if (!c) return;
-      lightboxImg.src = "assets/certificates/" + c.file;
-      lightboxImg.alt = c.title;
-      lightboxTitle.textContent = c.title;
-      lightboxIssuer.textContent = c.issuer;
-      lightbox.classList.add("is-open");
-      lightbox.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeCert() {
-      lightbox.classList.remove("is-open");
-      lightbox.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
-    }
-
-    grid.querySelectorAll(".cert-card").forEach(function (card) {
-      card.addEventListener("click", function () { openCert(Number(card.getAttribute("data-cert-index"))); });
-      card.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openCert(Number(card.getAttribute("data-cert-index"))); }
-      });
-    });
-
-    var closeBtn = document.getElementById("cert-lightbox-close");
-    if (closeBtn) closeBtn.addEventListener("click", closeCert);
-    lightbox.addEventListener("click", function (e) { if (e.target === lightbox) closeCert(); });
-    window.addEventListener("keydown", function (e) { if (e.key === "Escape") closeCert(); });
-  }
-
   function initRevealAnimations() {
     var items = document.querySelectorAll(".reveal");
     if (!("IntersectionObserver" in window)) {
@@ -481,7 +405,6 @@
     initMarquee();
     initPartners();
     initProjectsToggle();
-    renderCertificates();
     initFooterYear();
     applyTranslations(currentLang());
     initRevealAnimations();
