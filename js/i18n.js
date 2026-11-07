@@ -8,7 +8,7 @@ window.SITE_I18N = {
       home: "Bosh sahifa",
       about: "Men haqimda",
       projects: "Loyihalar",
-      studio3d: "3D-studiya",
+      aistudio: "AI Studio",
       aivideo: "AI-video",
       partners: "Hamkorlar",
       contact: "Aloqa"
@@ -58,12 +58,17 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "Sayt va Telegram-botlar ishlab chiqish uchun buyurtmalarni qabul qiluvchi Telegram-bot: paket tanlash, anketa va administratorga bildirishnoma.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
     },
-    studio3d: {
-      subtitle: "Vizualizatsiya",
-      title: "3D-studiya",
-      description: "3D obyektlarni ko'ring — pastdagi tugmalar orqali modellarni almashtiring.",
-      hint: "Aylantirish uchun torting",
-      models: { network: "Tarmoq", watch: "Soat", rubik: "Rubik kubi" }
+    aistudio: {
+      subtitle: "Asosiy loyiha",
+      title: "AI Studio",
+      name: "Forma — AI Virtual Office",
+      description: "AI-xodimlar uchun virtual ofis: jamoa jonli piksel ofisda ishlaydi, siz esa vazifa berasiz, ularning bajarilishini real vaqtda kuzatasiz va natijalarni qabul qilasiz. Hozir faol ishlab chiqilmoqda.",
+      features: [
+        "Interaktiv piksel ofis: jonli personajlar, kun va kechqurun, masshtab va kamerani boshqarish",
+        "Vazifalar markazi: yaratish, filtrlar, qidiruv, natija va o'tishlar tarixi",
+        "Server navbati: vazifalar vkladka yopilgandan keyin ham bajarilaveradi",
+        "Har bir xodim holati to'g'ridan-to'g'ri serverdan keladi"
+      ]
     },
     aivideo: {
       subtitle: "Kreativ loyihalar",
@@ -108,7 +113,7 @@ window.SITE_I18N = {
       home: "Главная",
       about: "Обо мне",
       projects: "Проекты",
-      studio3d: "3D-студия",
+      aistudio: "AI Studio",
       aivideo: "AI-видео",
       partners: "Партнёры",
       contact: "Контакты"
@@ -158,12 +163,17 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "Telegram-бот для приёма заявок на разработку сайтов и ботов: выбор пакета, анкета и уведомления администратору.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
     },
-    studio3d: {
-      subtitle: "Визуализация",
-      title: "3D-студия",
-      description: "3D-объекты — переключайтесь между моделями с помощью кнопок ниже.",
-      hint: "Потяните, чтобы вращать",
-      models: { network: "Сеть", watch: "Часы", rubik: "Кубик Рубика" }
+    aistudio: {
+      subtitle: "Главный проект",
+      title: "AI Studio",
+      name: "Forma — AI Virtual Office",
+      description: "Виртуальный офис для ИИ-сотрудников: команда работает в живом пиксельном офисе, а вы ставите задачи, следите за их выполнением в реальном времени и принимаете результат. Сейчас в активной разработке.",
+      features: [
+        "Интерактивный пиксельный офис: живые персонажи, день и вечер, масштаб и управление камерой",
+        "Центр задач: создание, фильтры, поиск, результат и журнал переходов",
+        "Серверная очередь: задачи продолжаются даже после закрытия вкладки",
+        "Статус каждого сотрудника приходит напрямую с сервера"
+      ]
     },
     aivideo: {
       subtitle: "Креативные проекты",
@@ -208,7 +218,7 @@ window.SITE_I18N = {
       home: "Home",
       about: "About",
       projects: "Projects",
-      studio3d: "3D Studio",
+      aistudio: "AI Studio",
       aivideo: "AI Video",
       partners: "Partners",
       contact: "Contact"
@@ -258,12 +268,17 @@ window.SITE_I18N = {
         { category: "TELEGRAM BOT", title: "Goshapa Order Bot", description: "A Telegram bot for taking website and bot-development orders: package selection, an intake form and admin notifications.", url: "https://github.com/goshapa/goshapa-order-bot", isLive: false }
       ]
     },
-    studio3d: {
-      subtitle: "Visualization",
-      title: "3D Studio",
-      description: "A few 3D objects — switch between models with the buttons below.",
-      hint: "Drag to rotate",
-      models: { network: "Network", watch: "Watch", rubik: "Rubik's Cube" }
+    aistudio: {
+      subtitle: "Featured Project",
+      title: "AI Studio",
+      name: "Forma — AI Virtual Office",
+      description: "A virtual office for AI employees: the team works in a living pixel-art office while you assign tasks, follow their progress in real time and accept the results. Currently in active development.",
+      features: [
+        "Interactive pixel office: living characters, day and evening modes, zoom and camera controls",
+        "Task center: creation, filters, search, saved results and a transition log",
+        "Server-side queue: tasks keep running even after the tab is closed",
+        "Each employee's status comes straight from the server"
+      ]
     },
     aivideo: {
       subtitle: "Creative Projects",
