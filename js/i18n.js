@@ -10,7 +10,6 @@ window.SITE_I18N = {
       projects: "Loyihalar",
       aistudio: "AI Studio",
       aivideo: "AI-video",
-      partners: "Hamkorlar",
       contact: "Aloqa"
     },
     hero: {
@@ -78,11 +77,6 @@ window.SITE_I18N = {
       comingSoon: "Tez orada qo'shiladi",
       captions: ["Kod va dasturlash", "AI-agentlar", "Telegram-botlar"]
     },
-    partners: {
-      subtitle: "Ishonch",
-      title: "Hamkorlar",
-      placeholderNote: "Hamkorlar ro'yxati tez orada to'ldiriladi."
-    },
     cta: {
       title: "Loyihangizni boshlaylikmi?",
       description: "Sayt, Telegram-bot, AI-agent yoki ilova kerakmi? Keling, gaplashib olaylik.",
@@ -116,7 +110,6 @@ window.SITE_I18N = {
       projects: "Проекты",
       aistudio: "AI Studio",
       aivideo: "AI-видео",
-      partners: "Партнёры",
       contact: "Контакты"
     },
     hero: {
@@ -184,11 +177,6 @@ window.SITE_I18N = {
       comingSoon: "Скоро будет добавлено",
       captions: ["Код и программирование", "ИИ-агенты", "Telegram-боты"]
     },
-    partners: {
-      subtitle: "Доверие",
-      title: "Партнёры",
-      placeholderNote: "Список партнёров будет дополнен."
-    },
     cta: {
       title: "Начнём ваш проект?",
       description: "Нужен сайт, Telegram-бот, ИИ-агент или приложение? Давайте обсудим.",
@@ -222,7 +210,6 @@ window.SITE_I18N = {
       projects: "Projects",
       aistudio: "AI Studio",
       aivideo: "AI Video",
-      partners: "Partners",
       contact: "Contact"
     },
     hero: {
@@ -289,11 +276,6 @@ window.SITE_I18N = {
       description: "Short videos created with the help of artificial intelligence.",
       comingSoon: "Coming soon",
       captions: ["Code & Programming", "AI Agents", "Telegram Bots"]
-    },
-    partners: {
-      subtitle: "Trust",
-      title: "Partners",
-      placeholderNote: "Partner list coming soon."
     },
     cta: {
       title: "Ready to start your project?",

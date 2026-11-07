@@ -11,7 +11,6 @@
     "HTML/CSS", "Java", "C#", "C++", "REST API", "PostgreSQL", "Vercel", "Git"
   ];
 
-  var PARTNER_PLACEHOLDERS = ["TechCorp", "WebNova", "BotForge", "DataFlow", "NetVantage", "AppWorks"];
 
   function initBackToTop() {
     var btn = document.getElementById("back-to-top");
@@ -127,14 +126,6 @@
       return '<span class="marquee-chip">' + tag + "</span>";
     }).join("");
     track.innerHTML = html;
-  }
-
-  function initPartners() {
-    var track = document.getElementById("partners-track");
-    var logos = PARTNER_PLACEHOLDERS.concat(PARTNER_PLACEHOLDERS);
-    track.innerHTML = logos.map(function (name) {
-      return '<div class="partner-logo">' + name + "</div>";
-    }).join("");
   }
 
   function browserMockCard(item, index, i18n) {
@@ -343,7 +334,6 @@
     initMobileMenu();
     initHeaderScroll();
     initMarquee();
-    initPartners();
     initFooterYear();
     applyTranslations(currentLang());
     initRevealAnimations();

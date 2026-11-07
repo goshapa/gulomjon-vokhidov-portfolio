@@ -823,40 +823,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .video-time { font-size: 11px; color: #fff; min-width: 38px; text-align: right; }
 .video-caption { padding: 14px 18px; font-size: 14px; font-weight: 600; text-align: center; }
 
-/* ===== Partners ===== */
-.partners-note {
-  text-align: center;
-  font-size: 13px;
-  color: var(--text-muted);
-  margin: -32px 0 30px;
-  font-style: italic;
-}
-.partners-marquee-wrap {
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
-}
-.partners-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  animation: marquee 22s linear infinite;
-}
-.partner-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 180px;
-  height: 84px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  font-weight: 800;
-  font-size: 16px;
-  color: var(--text-muted);
-  letter-spacing: -0.01em;
-}
-
 /* ===== CTA ===== */
 .cta-block {
   background: linear-gradient(135deg, var(--accent-soft), transparent);
