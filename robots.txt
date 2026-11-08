@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vokhidov.dev/sitemap.xml
+Sitemap: https://vokhidov.uz/sitemap.xml
