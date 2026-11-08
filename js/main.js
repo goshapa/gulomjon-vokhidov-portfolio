@@ -133,11 +133,7 @@
     var buttonLabel = item.isLive ? i18n.projects.visitSite : i18n.projects.viewRepo;
     var mediaHtml;
     if (item.image) {
-      mediaHtml = '<img class="browser-fallback-img is-always-visible" src="' + item.image + '" alt="' + item.title + '" loading="lazy">';
-    } else if (item.isLive) {
-      mediaHtml = '<iframe class="browser-frame" src="' + item.url + '" loading="lazy" title="' + item.title + '"></iframe>' +
-        '<img class="browser-fallback-img" src="./gulomjon_photo.png" alt="' + item.title + '" loading="lazy">' +
-        '<div class="browser-loader"><span class="loader-spin"></span></div>';
+      mediaHtml = '<img class="browser-fallback-img is-always-visible" src="' + item.image + '" alt="' + item.title + '" loading="lazy" decoding="async" width="1200" height="750">';
     } else {
       mediaHtml = '<div class="browser-fallback-placeholder">' +
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.1 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>' +
@@ -168,13 +164,6 @@
     grid.innerHTML = dict.projects.items.slice(0, VISIBLE_PROJECTS).map(function (item, i) {
       return browserMockCard(item, i, dict);
     }).join("");
-
-    grid.querySelectorAll(".browser-frame").forEach(function (frame) {
-      frame.addEventListener("load", function () {
-        var loader = frame.parentElement.querySelector(".browser-loader");
-        if (loader) loader.classList.add("is-hidden");
-      });
-    });
   }
 
   function iconPlay() {
@@ -212,7 +201,7 @@
     return (
       '<div class="video-card">' +
         '<div class="video-player" data-video-index="' + index + '">' +
-          '<video playsinline preload="metadata" muted loop' + (src ? ' src="' + src + '"' : "") + "></video>" +
+          '<video playsinline preload="none" muted loop' + (src ? ' src="' + src + '" poster="' + src.replace(".mp4", ".webp") + '"' : "") + "></video>" +
           '<div class="video-overlay video-overlay-play">' + iconBigPlay() + "</div>" +
           '<div class="video-controls">' +
             '<button class="v-play" aria-label="Play">' + iconPlay() + "</button>" +
